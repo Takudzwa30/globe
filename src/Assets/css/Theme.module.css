@@ -1,0 +1,24 @@
+.container {
+    padding-inline: 52px;
+  }
+  
+  .buttonStyle {
+    padding: 14px 40px;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff;
+    transition: all 0.3s;
+    background-color: transparent;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .buttonStyle:hover {
+    background-color: #71319b;
+  }
+  
+  
