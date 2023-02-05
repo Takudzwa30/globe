@@ -7,7 +7,7 @@ import { Route } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout/MainLayout";
 
 // Views
-// import HomeView from "../Views/Main/HomeView";
+import HomeView from "../Views/HomeView";
 // import SolutionView from "../Views/Main/SolutionView";
 // import StrategyView from "../Views/Main/StrategyView";
 // import ContactView from "../Views/Main/ContactView";
@@ -20,7 +20,7 @@ const routes = {
     routes: {
       home: {
         path: "",
-        // element: <HomeView />,
+        element: <HomeView />,
         title: "Home",
         // icon: <AiFillHome />,
       },

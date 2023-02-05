@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins+Deca:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat:wght@400;600;700&display=swap');
 
 :root {
   /* Transition */
@@ -12,6 +10,7 @@
   --blackish-green-color: #112211;
   --white-color: #ffffff;
   --black-color: #000;
+  --body-bg: #FAFBFC;
 }
 
 * {
@@ -21,6 +20,8 @@
   scrollbar-width: thin;
   scrollbar-color: var(--main-color);
   font-size: 16px;
+  font-family: "Montserrat";
+
 }
 
 html {
@@ -51,21 +52,23 @@ html {
 
 body,
 input {
-  font-family: "Poppins", sans-serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
+  background-color: var(--body-bg);
 }
 
 body {
   background-color: var(--body-bg);
+  font-style: normal;
+  font-weight: 400px;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
+} */
 
 a {
   text-decoration: none;
@@ -76,13 +79,24 @@ ul {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	margin: 0;
+}
+
+
 h1 {
-  /* 42px */
-  font-size: 2.625rem;
+  /* 40px */
+  font-size: 2.5rem;
 }
 
 h2 {
-  /* 38px */
+  /* 36px */
   font-size: 2.25rem;
 }
 
@@ -92,13 +106,13 @@ h3 {
 }
 
 h4 {
-  /* 30px  */
-  font-size: 1.875rem;
+  /* 24px  */
+  font-size: 1.5rem;
 }
 
 h5 {
-  /* 24px  */
-  font-size: 1.5rem;
+  /* 20px  */
+  font-size: 1.25rem;
 }
 
 h6 {
@@ -111,6 +125,9 @@ p {
   font-size: 0.875rem;
   margin: 0;
 }
+
+/* TODO need to check the font-size in responsive to verify how to change the root font size  */
+
 /* 
 @media screen and (max-width: 991px) {
   :root {

@@ -1,0 +1,97 @@
+.navBarContainer {
+  padding-inline: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 20px;
+  background: #fff;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.flights,
+.hotels {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--blackish-green-color);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flights:hover, .hotels:hover{
+    color: var(--mint-green-color);
+}
+
+.plane {
+  font-size: 16px;
+}
+
+.selector {
+  left: 0;
+  transition: all 5s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 110.35px;
+  height: 36px;
+}
+
+.selector,
+.selectorActive {
+  bottom: -20px;
+  width: 103px;
+  height: 5px;
+  background-color: var(--mint-green-color);
+  position: absolute;
+}
+
+.selectorActive {
+  right: 0;
+}
+
+.profile {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.login,
+.signup {
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.signup {
+  padding: 14px 24px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background: var(--blackish-green-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.login{
+    transition: all 0.3s ease;
+}
+
+.signup:hover {
+  background: var(--white-color);
+  color: var(--blackish-green-color);
+  border: 1px solid var(--blackish-green-color);
+}
+
+.login:hover{
+    color: var(--mint-green-color);
+}
