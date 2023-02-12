@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 
+// Components
+import MobileMenu from "../MobileMenu/MobileMenu";
+
 // Libraries
 import { Link } from "react-router-dom";
 
@@ -22,6 +25,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className={Style.navBarContainer}>
+      <MobileMenu className={Style.menu} />
       <div className={Style.links}>
         <div className={Style.flights} onClick={() => setActive(true)}>
           <IoAirplane className={Style.plane} />
