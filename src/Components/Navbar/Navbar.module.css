@@ -24,8 +24,9 @@
   transition: all 0.3s ease;
 }
 
-.flights:hover, .hotels:hover{
-    color: var(--mint-green-color);
+.flights:hover,
+.hotels:hover {
+  color: var(--mint-green-color);
 }
 
 .plane {
@@ -82,8 +83,8 @@
   transition: all 0.3s ease;
 }
 
-.login{
-    transition: all 0.3s ease;
+.login {
+  transition: all 0.3s ease;
 }
 
 .signup:hover {
@@ -92,6 +93,76 @@
   border: 1px solid var(--blackish-green-color);
 }
 
-.login:hover{
-    color: var(--mint-green-color);
+.login:hover {
+  color: var(--mint-green-color);
+}
+
+.navBarIcon {
+  display: none;
+}
+.iconPartOne {
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--mint-green-color);
+  margin-bottom: 7px;
+  transition: all 0.3s;
+}
+
+.navBarIconMobile.active .iconPartOne {
+  width: 30px;
+  transform: translateY(10px) rotate(-45deg);
+}
+
+.iconPartTwo {
+  width: 22px;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--mint-green-color);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.navBarIconMobile.active .iconPartTwo {
+  opacity: 0;
+}
+
+.iconPartThree {
+  width: 14px;
+  height: 3px;
+  border-radius: 10px;
+  background: var(--mint-green-color);
+  margin-top: 7px;
+  transition: all 0.3s;
+}
+
+.navBarIconMobile.active .iconPartThree {
+  width: 30px;
+  transform: translateY(-10px) rotate(45deg);
+}
+
+@media screen and (max-width: 991px) {
+  .navBarContainer {
+    padding-inline: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile,
+  .links {
+    display: none;
+  }
+  .navBarIcon {
+    display: block;
+  }
+  .navBarIconMobile {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+    width: 30px;
+    text-align: right;
+    cursor: pointer;
+    z-index: 110;
+  }
 }

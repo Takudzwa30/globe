@@ -3,9 +3,13 @@ import React, { useState } from "react";
 // Libraries
 import { Link } from "react-router-dom";
 
+// Utils
+import classNames from "@hybris-software/ui-kit/dist/Utils/classNames";
+
 // icons
 import { IoAirplane } from "react-icons/io5";
 import { IoIosBed } from "react-icons/io";
+import { FaRegUserCircle } from "react-icons/fa";
 
 // logo
 import Logo from "../../Assets/logos/logoDark.svg";
@@ -15,6 +19,7 @@ import Style from "./Navbar.module.css";
 
 const Navbar = () => {
   const [active, setActive] = useState(true);
+  const [open, setOpen] = useState(false);
   return (
     <div className={Style.navBarContainer}>
       <div className={Style.links}>
@@ -32,6 +37,27 @@ const Navbar = () => {
       <Link className={Style.logo} to={"/"}>
         <img src={Logo} alt="" />
       </Link>
+
+      <div className={Style.navBarIcon}>
+        <div
+          className={classNames(
+            Style.navBarIconMobile,
+            open ? Style.active : Style.notActive
+          )}
+          onClick={() => {
+            setOpen(!open);
+            if (open) {
+              document.body.style.overflow = "unset";
+            } else {
+              document.body.style.overflow = "hidden";
+            }
+          }}
+        >
+          <span className={Style.iconPartOne}></span>
+          <span className={Style.iconPartTwo}></span>
+          <span className={Style.iconPartThree}></span>
+        </div>
+      </div>
 
       <div className={Style.profile}>
         <div className={Style.login}>Login</div>
