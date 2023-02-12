@@ -25,7 +25,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className={Style.navBarContainer}>
-      <MobileMenu className={Style.menu} />
+      <MobileMenu open={open} setOpen={setOpen} />
       <div className={Style.links}>
         <div className={Style.flights} onClick={() => setActive(true)}>
           <IoAirplane className={Style.plane} />
@@ -50,11 +50,11 @@ const Navbar = () => {
           )}
           onClick={() => {
             setOpen(!open);
-            if (open) {
-              document.body.style.overflow = "unset";
-            } else {
-              document.body.style.overflow = "hidden";
-            }
+            // if (open) {
+            //   document.body.style.overflow = "unset";
+            // } else {
+            //   document.body.style.overflow = "hidden";
+            // }
           }}
         >
           <span className={Style.iconPartOne}></span>

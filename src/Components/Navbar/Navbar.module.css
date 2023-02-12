@@ -6,6 +6,14 @@
   background: #fff;
 }
 
+.menuShow {
+  display: none;
+}
+
+.menuHide {
+  display: block;
+}
+
 .links {
   display: flex;
   align-items: center;

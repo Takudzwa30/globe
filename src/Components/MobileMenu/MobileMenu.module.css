@@ -1,6 +1,37 @@
-.menu {
+.menu,
+.menuHide {
   position: absolute;
   top: 76px;
   right: 20px;
   padding-top: 20px;
+  z-index: 3;
+  background: #fff;
+}
+
+.menuHide {
+  display: none;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.menu {
+  opacity: 1;
+  display: block;
+  transition: all 0.7s ease;
+}
+
+.navLink {
+  display: flex;
+  gap: 10px;
+  padding: 15px;
+  align-items: center;
+}
+
+.navLink:hover{
+    color: var(--white-color);
+    background: var(--mint-green-color);
+}
+
+.navIcon{
+    font-size: 20px;
 }
