@@ -9,15 +9,20 @@
 }
 
 .menuHide {
-  display: none;
+  /* display: none; */
   opacity: 0;
-  transition: all 0.7s ease;
+  /* height: 0; */
+  /* transform: translate(0); */
+  height: 0px;
+  transition: height 0.7s ease;
 }
 
 .menu {
+  height: 220px;
   opacity: 1;
-  display: block;
-  transition: all 0.7s ease;
+  /* display: block; */
+  transition: opacity 1.3s ease;
+
 }
 
 .navLink {
@@ -25,13 +30,14 @@
   gap: 10px;
   padding: 15px;
   align-items: center;
+  font-weight: 600;
 }
 
-.navLink:hover{
-    color: var(--white-color);
-    background: var(--mint-green-color);
+.navLink:hover {
+  color: var(--white-color);
+  background: var(--mint-green-color);
 }
 
-.navIcon{
-    font-size: 20px;
+.navIcon {
+  font-size: 20px;
 }
