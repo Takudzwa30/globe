@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@hybris-software/ui-kit": "^2.1.18",
+    "@hybris-software/use-ful-form": "^2.1.11",
+    "@hybris-software/use-query": "^2.3.17",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
