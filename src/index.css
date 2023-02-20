@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Montserrat:wght@400;600;700&display=swap");
 
 :root {
   /* Transition */
@@ -7,10 +7,11 @@
 
   /* Colors */
   --mint-green-color: #8dd3bb;
+  --light-mint-green-color: #cdeae1;
   --blackish-green-color: #112211;
   --white-color: #ffffff;
   --black-color: #000;
-  --body-bg: #FAFBFC;
+  --body-bg: #fafbfc;
 }
 
 * {
@@ -21,7 +22,6 @@
   scrollbar-color: var(--main-color);
   font-size: 16px;
   font-family: "Montserrat";
-
 }
 
 html {
@@ -85,10 +85,9 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: 700;
-	margin: 0;
+  font-weight: 600;
+  margin: 0;
 }
-
 
 h1 {
   /* 40px */
