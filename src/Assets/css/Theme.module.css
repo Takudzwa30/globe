@@ -1,24 +1,31 @@
 .container {
-    padding-inline: 52px;
+  padding-inline: 52px;
+}
+
+.buttonStyle {
+  padding: 10px 40px;
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+  background-color: var(--blackish-green-color);
+  color: #ffff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.buttonStyle:hover {
+  background-color: var(--white-color);
+  color: var(--blackish-green-color);
+  border: 1px solid var(--blackish-green-color);
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      padding-inline: 15px;
+    }
   }
-  
-  .buttonStyle {
-    padding: 14px 40px;
-    border-radius: 5px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #ffffff;
-    transition: all 0.3s;
-    background-color: transparent;
-    color: #ffff;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  .buttonStyle:hover {
-    background-color: #71319b;
-  }
-  
   
