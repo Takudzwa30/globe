@@ -5,6 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 
 // Libraries
 import { Link } from "react-router-dom";
+import { Container } from "@hybris-software/ui-kit";
 
 // Utils
 import classNames from "@hybris-software/ui-kit/dist/Utils/classNames";
@@ -24,7 +25,7 @@ const Navbar = () => {
   const [active, setActive] = useState(true);
   const [open, setOpen] = useState(false);
   return (
-    <div className={Style.navBarContainer}>
+    <Container className={Style.navBarContainer}>
       <MobileMenu open={open} setOpen={setOpen} />
       <div className={Style.links}>
         <div className={Style.flights} onClick={() => setActive(true)}>
@@ -67,7 +68,7 @@ const Navbar = () => {
         <div className={Style.login}>Login</div>
         <div className={Style.signup}>Sign up</div>
       </div>
-    </div>
+    </Container>
   );
 };
 
