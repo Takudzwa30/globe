@@ -127,9 +127,9 @@ p {
 
 /* TODO need to check the font-size in responsive to verify how to change the root font size  */
 
-/* 
+
 @media screen and (max-width: 991px) {
   :root {
     font-size: 12px;
   }
-} */
+}
