@@ -1,0 +1,112 @@
+.newsletter {
+  position: relative;
+  bottom: -150px;
+  padding: 25px;
+  background-color: var(--light-mint-green-color);
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  z-index: 34;
+}
+
+.newsletter h1 {
+  font-size: 2.75rem;
+  color: var(--blackish-green-color);
+  font-weight: 600;
+}
+
+.newsletter h5 {
+  margin-block: 25px 8px;
+}
+
+.newsletter p {
+  margin-bottom: 15px;
+}
+
+.emailInputs {
+  display: grid;
+  align-items: center;
+  gap: 15px;
+  grid-template-columns: 1fr 110px;
+}
+
+.emailField {
+  margin-top: 20px;
+}
+
+.button {
+  max-height: 48px;
+}
+
+.footer {
+  padding-block: 210px 64px;
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: var(--mint-green-color);
+}
+
+.logo {
+  width: 120px;
+  height: 40px;
+  background-image: url("../../Assets/logos/logoLight.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 25px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  /* padding-right: 140px; */
+}
+
+.socialMedia svg {
+  font-size: 20px;
+}
+
+.link {
+  transition: all 0.3s ease;
+}
+
+.link:hover {
+  color: #fff;
+  scale: 1.1;
+}
+
+/* .bottomFooter {
+  display: flex;
+} */
+
+.siteMapWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  column-gap: 25px;
+  row-gap: 40px;
+}
+
+.siteMap h6 {
+  margin-bottom: 15px;
+}
+
+.siteMap p {
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 991px) {
+  .mailBox {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .emailInputs {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
