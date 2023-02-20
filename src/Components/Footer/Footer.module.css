@@ -9,6 +9,7 @@
   justify-content: space-between;
   gap: 20px;
   z-index: 34;
+  align-items: center;
 }
 
 .newsletter h1 {
@@ -40,6 +41,14 @@
   max-height: 48px;
 }
 
+.mailBox{
+    max-height: 240px;
+}
+
+.mailBox img{
+    width: 100%;
+}
+
 .footer {
   padding-block: 210px 64px;
   max-width: 1440px;
@@ -61,7 +70,6 @@
   display: flex;
   gap: 15px;
   align-items: center;
-  /* padding-right: 140px; */
 }
 
 .socialMedia svg {
@@ -94,7 +102,7 @@
   margin-bottom: 12px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .mailBox {
     display: none;
   }
@@ -104,5 +112,8 @@
   .emailInputs {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+  .newsletter {
+    padding-inline: 10px;
   }
 }
