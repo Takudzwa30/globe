@@ -1,11 +1,19 @@
 import React from "react";
+
+// Components
 import HeroSection from "./Components/HeroSection/HeroSection";
+import Plan from "./Components/Plan/Plan";
 
 const HomeView = () => {
   return (
-    <div>
-      <HeroSection />
-    </div>
+    <>
+      <section>
+        <HeroSection />
+      </section>
+      <section>
+        <Plan />
+      </section>
+    </>
   );
 };
 
