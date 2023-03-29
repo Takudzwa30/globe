@@ -1,0 +1,36 @@
+.rangeWrapper {
+  position: relative;
+  min-width: 150px;
+  z-index: 2343;
+
+}
+
+.rangeWrapper p:nth-of-type(1) {
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: var(--white-color);
+  padding-inline: 6px;
+  white-space: nowrap;
+}
+
+.rangeWrapper p:nth-of-type(2) {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #e7e7e7;
+  padding: 11px 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-size: 12px;
+  background-color: white;
+}
+
+.range {
+    position: absolute;
+    top: 40px;
+    left: -50px;
+}
