@@ -69,7 +69,6 @@ const Plan = () => {
 };
 
 const Card = ({ image, destination }) => {
-  console.log(image);
   return (
     <div className={Style.card}>
       <div

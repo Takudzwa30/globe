@@ -41,7 +41,6 @@ const DateRange = ({ ...props }) => {
         <DateRangePicker
           onChange={(item) => {
             setState([item.selection]);
-            console.log(item.selection.endDate);
             if (item.selection) {
               setShow(false);
             }

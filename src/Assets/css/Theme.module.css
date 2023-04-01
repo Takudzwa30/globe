@@ -3,14 +3,14 @@
 }
 
 .buttonStyle {
-  padding: 10px 40px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid transparent;
-  transition: all 0.3s;
+  transition: all 0.2s;
   background-color: var(--blackish-green-color);
   color: #ffff;
   font-weight: 500;
@@ -23,9 +23,114 @@
   border: 1px solid var(--blackish-green-color);
 }
 
+/* ------------ Primary Button ------------- */
+.buttonStyle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: 600;
+  background-color: var(--white-color);
+  border: 1px solid var(--mint-green-color);
+  transition: all 0.2s ease;
+  user-select: none;
+  color: var(--blackish-green-color);
+  overflow: hidden;
+  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+}
+.buttonStyle > a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  font-size: 16px;
+  color: var(--light-blue);
+  text-transform: capitalize;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.buttonStyle > a > svg {
+  width: 20px;
+  height: 20px;
+}
+.buttonStyle:hover {
+  border: unset;
+  background-color: var(--mint-green-color);
+}
+.buttonStyle:hover > a {
+  color: var(--white-color);
+}
+.buttonStyle:active {
+  scale: 1.05;
+}
+/* ------------ Secondary Button ------------- */
+.iconBtn {
+  background-color: var(--mint-green-color);
+  border: unset;
+  color: var(--blackish-green-color);
+}
+.iconBtn svg {
+transition: all 0.1s ease;
+}
+.iconBtn:hover {
+  color: var(--mint-green-color);
+  background-color: var(--white-color);
+  border: 1px var(--mint-green-color);
+}
+.iconBtn:hover > a {
+  color: var(--mint-green-color);
+}
+.iconBtn:hover svg {
+  color: var(--mint-green-color);
+}
+/* ------------ Borderless Button ------------- */
+.borderBtn {
+  border: unset;
+}
+/* ----------- Colored Button ------------ */
+.coloredBtn {
+  background-color: var(--blackish-green-color);
+  text-transform: capitalize;
+  border: 1px solid var(--blackish-green-color);
+  font-weight: 600;
+}
+.coloredBtn > a {
+  color: var(--white-color);
+}
+.coloredBtn:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--blackish-green-color);
+}
+.coloredBtn:hover > a {
+  color: var(--light-blue);
+}
+
+/* ------- Disabled Button ------- */
+.buttonStyleDisabled {
+  background-color: var(--disabled-btn-color);
+  border: unset;
+}
+.buttonStyleDisabled > a {
+  cursor: not-allowed;
+  background-color: var(--disabled-btn-color);
+  color: var(--disabled-btn-text-color);
+}
+.buttonStyleDisabled:hover {
+  background-color: var(--disabled-btn-color);
+}
+.buttonStyleDisabled:hover > a {
+  background-color: var(--disabled-btn-color);
+  color: var(--disabled-btn-text-color);
+}
+.buttonStyleDisabled:active {
+  scale: 1;
+}
+
 @media screen and (max-width: 768px) {
-    .container {
-      padding-inline: 15px;
-    }
+  .container {
+    padding-inline: 15px;
   }
-  
+}
