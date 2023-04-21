@@ -26,10 +26,10 @@ const CustomButton = ({ children, baseClassName, to, ...props }) => (
     )}
     {...props}
   >
-    <Link className={props.linkClassName} to={to}>
-       {props.icon && <BsSendFill />}
+    {/* <Link className={props.linkClassName} to={to ? to : "#"}> */}
+      {props.icon && <BsSendFill />}
       {children}
-    </Link>
+    {/* </Link> */}
   </Button>
 );
 
