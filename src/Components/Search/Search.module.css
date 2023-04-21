@@ -12,6 +12,11 @@
   max-width: 220px;
 }
 
+.title{
+  margin-bottom:40px;
+
+}
+
 .greenUnderLineLeft,
 .greenUnderLineRight {
   width: 90px;
@@ -34,7 +39,8 @@
   display: flex;
   /* justify-content: space-between; */
   flex-wrap: wrap;
-  gap: 20px;
+  align-items: center;
+  gap: 40px 20px;
 }
 
 .hotels,
@@ -59,4 +65,46 @@
 .hotels:hover,
 .flights:hover {
   color: var(--mint-green-color);
+}
+
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 40px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.promoCodeField {
+  padding-top: 20px;
+}
+
+.field {
+  border: none;
+  padding-left: 0;
+}
+
+.field input:focus {
+  border: 1px solid var(--mint-green-color);
+}
+
+.field input {
+  border: 1px solid transparent;
+  color: var(--blackish-green);
+  padding: 15px;
+  border-radius: 10px;
+  caret-color: var(--mint-green-color);
+}
+
+
+@media screen and (max-width: 768px) {
+    .buttons{
+        justify-content: center;
+    }
+    .search{
+        justify-content: center;
+    }
+    .heading{
+        margin-inline: auto;
+    }
 }

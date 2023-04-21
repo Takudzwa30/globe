@@ -17,7 +17,7 @@ const HomeView = () => {
         <HeroSection />
       </section>
       <section className={Style.search}>
-        <Search />
+        <Search home filterValue="flights" />
       </section>
       <section>
         <Plan />
