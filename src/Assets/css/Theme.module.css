@@ -5,11 +5,11 @@
 /* Input Field  */
 
 .inputFieldStyle input,
-.inputFieldErrorStyle > input {
+.inputFieldErrorStyle > input,
+.inputFieldSuccessStyle input {
   border-radius: 10px;
   background-color: white;
 }
-
 
 .buttonStyle {
   padding: 10px;

@@ -9,6 +9,8 @@ import { Pagination, Autoplay } from "swiper";
 import star from "../../../../Assets/images/ion_star.png";
 import googleLogo from "../../../../Assets/images/googleLogo.png";
 import iceViews from "../../../../Assets/images/iceViews.png";
+import northernLights from "../../../../Assets/images/northernLights.png";
+import cave from "../../../../Assets/images/cave.png";
 
 // Components
 import CustomButton from "../../../../Components/CustomButton/CustomButton";
@@ -33,26 +35,26 @@ const data = [
     bottomImage: iceViews,
   },
   {
-    heading: `“A real sense of community, nurtured”`,
+    heading: `“The facilities are superb. Clean, slick, bright.”`,
     text:
       "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
-    stars: 5,
-    name: "Olga",
-    place: "Weave Studios – Kai Tak",
+    stars: 4,
+    name: "Thomas",
+    place: "Weave Studios – Olympic",
     companyLogo: googleLogo,
     company: "Google",
-    bottomImage: iceViews,
+    bottomImage: northernLights,
   },
   {
     heading: `“A real sense of community, nurtured”`,
     text:
       "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
     stars: 5,
-    name: "Olga",
+    name: "Eliot",
     place: "Weave Studios – Kai Tak",
     companyLogo: googleLogo,
     company: "Google",
-    bottomImage: iceViews,
+    bottomImage: cave,
   },
   {
     heading: `“A real sense of community, nurtured”`,
@@ -73,7 +75,7 @@ const Reviews = () => {
       <div className={Style.head}>
         <div>
           <h3>Reviews</h3>
-          <h6>What people says about Golobe facilities</h6>
+          <h6>What people says about Globe facilities</h6>
         </div>
         <CustomButton to={""}>See All</CustomButton>
       </div>
