@@ -4,6 +4,7 @@ import React from "react";
 import { Button, Container, InputField } from "@hybris-software/ui-kit";
 import useForm from "@hybris-software/use-ful-form";
 // import useQuery from "@hybris-software/use-query";
+import CustomButton from "../CustomButton/CustomButton";
 
 // images
 import box from "../../Assets/images/emailBox.png";
@@ -43,7 +44,9 @@ const Footer = () => {
                 {...form.getInputProps("email")}
               />
 
-              <Button className={Style.button}>Subscribe</Button>
+              <CustomButton colored >
+                Subscribe
+              </CustomButton>
             </div>
           </div>
           <div className={Style.mailBox}>

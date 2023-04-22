@@ -2,6 +2,11 @@
   padding-inline: 52px;
 }
 
+/* Input Field  */
+.inputFieldErrorStyle > input {
+  background-color: white;
+}
+
 .buttonStyle {
   padding: 10px;
   border-radius: 5px;
@@ -74,7 +79,7 @@
   color: var(--blackish-green-color);
 }
 .iconBtn svg {
-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 .iconBtn:hover {
   color: var(--mint-green-color);
@@ -98,7 +103,7 @@ transition: all 0.1s ease;
   border: 1px solid var(--blackish-green-color);
   font-weight: 600;
 }
-.coloredBtn > a {
+.coloredBtn {
   color: var(--white-color);
 }
 .coloredBtn:hover {

@@ -35,18 +35,28 @@
 
 .emailField {
   margin-top: 20px;
+  border-radius: 7px;
+  height: 45px;
+}
+
+.emailField input {
+  caret-color: var(--mint-green-color);
+}
+
+.emailField input:focus{
+    border: 1px solid var(--mint-green-color) !important;
 }
 
 .button {
   max-height: 48px;
 }
 
-.mailBox{
-    max-height: 240px;
+.mailBox {
+  max-height: 240px;
 }
 
-.mailBox img{
-    width: 100%;
+.mailBox img {
+  width: 100%;
 }
 
 .footer {
@@ -106,7 +116,7 @@
   .mailBox {
     display: none;
   }
-  .newsletter{
+  .newsletter {
     justify-content: center;
     text-align: center;
   }
