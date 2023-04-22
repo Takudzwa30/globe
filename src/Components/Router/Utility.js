@@ -18,14 +18,17 @@ const findPath = (paths, path) => {
 const getPageTitle = (pathname, clientTitle) => {
   const isPathExists = findPath(paths, pathname);
 
-  return pathname === "/"
+  return pathname === "/globe/"
     ? `${clientTitle} | Homepage`
     : !isPathExists
     ? `${clientTitle} | 404 Not Found`
     : pathname.indexOf("-") === -1
     ? `${clientTitle} | ` + pathname.charAt(1).toUpperCase() + pathname.slice(2)
     : `${clientTitle} | ` +
-      pathname.replace("-", " ").charAt(1).toUpperCase() +
+      pathname
+        .replace("-", " ")
+        .charAt(1)
+        .toUpperCase() +
       pathname.replace("-", " ").slice(2);
 };
 

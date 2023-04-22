@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className={active ? Style.selector : Style.selectorActive}></div>
       </div>
 
-      <Link className={Style.logo} to={"/"}>
+      <Link className={Style.logo} to={"/globe"}>
         <img src={Logo} alt="" />
       </Link>
 

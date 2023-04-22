@@ -19,14 +19,14 @@ const routes = {
     title: "Main",
     routes: {
       home: {
-        path: "",
+        path: "/",
         element: <HomeView />,
         title: "Home",
         // icon: <AiFillHome />,
       },
       solution: {
-        path: "solution",
-        // element: <SolutionView />,
+        path: "/solution",
+        // element: <HomeView />,
         title: "Solution",
 
       },
