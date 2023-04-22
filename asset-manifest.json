@@ -1,7 +1,7 @@
 {
   "main.css": "/globe/static/css/main.8896366d.chunk.css",
-  "main.js": "/globe/static/js/main.57b2c992.chunk.js",
-  "main.js.map": "/globe/static/js/main.57b2c992.chunk.js.map",
+  "main.js": "/globe/static/js/main.a4efe566.chunk.js",
+  "main.js.map": "/globe/static/js/main.a4efe566.chunk.js.map",
   "static/js/1.8ad47d1a.chunk.js": "/globe/static/js/1.8ad47d1a.chunk.js",
   "static/js/1.8ad47d1a.chunk.js.map": "/globe/static/js/1.8ad47d1a.chunk.js.map",
   "static/css/2.d5914fa6.chunk.css": "/globe/static/css/2.d5914fa6.chunk.css",
@@ -25,9 +25,9 @@
   "static/media/dubaiImage.png": "/globe/static/media/dubaiImage.73f5891e.png",
   "static/media/northernLights.png": "/globe/static/media/northernLights.dd9f31ac.png",
   "static/media/cave.png": "/globe/static/media/cave.4bb4b870.png",
-  "static/css/2.d5914fa6.chunk.css.map": "/globe/static/css/2.d5914fa6.chunk.css.map",
   "static/css/main.8896366d.chunk.css.map": "/globe/static/css/main.8896366d.chunk.css.map",
+  "static/css/2.d5914fa6.chunk.css.map": "/globe/static/css/2.d5914fa6.chunk.css.map",
   "index.html": "/globe/index.html",
-  "precache-manifest.4c4cad5a2b30227a59a4e0cb1f13b01f.js": "/globe/precache-manifest.4c4cad5a2b30227a59a4e0cb1f13b01f.js",
+  "precache-manifest.84a689bafeddb9bba96d69c3cea229c9.js": "/globe/precache-manifest.84a689bafeddb9bba96d69c3cea229c9.js",
   "service-worker.js": "/globe/service-worker.js"
 }
