@@ -2,6 +2,8 @@ import React from "react";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper";
 
 // Images
 import star from "../../../../Assets/images/ion_star.png";
@@ -12,9 +14,24 @@ import iceViews from "../../../../Assets/images/iceViews.png";
 import CustomButton from "../../../../Components/CustomButton/CustomButton";
 
 // Styles
+// import "swiper/css";
+// import "swiper/css/effect-coverflow";
+import "swiper/swiper-bundle.min.css";
+import "swiper/swiper.min.css";
 import Style from "./Reviews.module.css";
 
 const data = [
+  {
+    heading: `“A real sense of community, nurtured”`,
+    text:
+      "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+    stars: 5,
+    name: "Olga",
+    place: "Weave Studios – Kai Tak",
+    companyLogo: googleLogo,
+    company: "Google",
+    bottomImage: iceViews,
+  },
   {
     heading: `“A real sense of community, nurtured”`,
     text:
@@ -61,9 +78,40 @@ const Reviews = () => {
         <CustomButton to={""}>See All</CustomButton>
       </div>
       <div className={Style.cards}>
-        {data.map((item, index) => {
-          return <Card key={index} {...item} />;
-        })}
+        <Swiper
+          spaceBetween={20}
+          slidesPerView={3}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1200: {
+              slidesPerView: 3,
+            },
+          }}
+          modules={[Pagination, Autoplay]}
+        >
+          {data.map((item, index) => {
+            return (
+              <SwiperSlide
+                style={{
+                  paddingRight: "30px",
+                  paddingBottom: "30px",
+                }}
+                key={index}
+              >
+                <Card {...item} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </Container>
   );
@@ -85,6 +133,7 @@ const Card = ({
     for (let i = 0; i < imageCount; i++) {
       images.push(
         <img
+          key={i}
           style={{
             marginRight: "10px",
           }}

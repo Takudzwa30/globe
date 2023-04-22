@@ -8,12 +8,14 @@
 
 /* temporary to be removed when slider is installed  */
 .cards {
-  display: grid;
-  gap: 50px;
-  grid-template-columns: repeat(3, 1fr);
+    /* padding: 30px; */
+  /* display: flex; */
+  /* gap: 50px;
+  grid-template-columns: repeat(3, 1fr); */
 }
 
 .review {
+  width: 100%;
   padding: 25px;
   background: #ffffff;
   box-shadow: 2px 4px 16px rgba(17, 34, 17, 0.1);
