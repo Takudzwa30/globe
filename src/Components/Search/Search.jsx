@@ -25,7 +25,7 @@ const Search = ({ filterValue, home }) => {
     { content: cities, title: "To", placeholder: "Destination" },
     {
       content: [
-        "Returhhhhjhjhfjdhfjdshfudhfjsdhfhjdsfgghdsfghdjsfn",
+        "Return",
         "One Way",
       ],
       title: "Trip",
