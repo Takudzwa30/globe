@@ -22,7 +22,11 @@ const HomeView = () => {
       <section>
         <Plan />
       </section>
-      <section>
+      <section
+        style={{
+          marginBlock: "100px",
+        }}
+      >
         <FlightandHotels />
       </section>
       <section>
