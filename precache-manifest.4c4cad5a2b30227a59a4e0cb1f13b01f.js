@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fe05ce5ebea81537331d",
+    "revision": "57b2c992e64b6f29daad",
     "url": "/globe/static/css/main.8896366d.chunk.css"
   },
   {
-    "revision": "fe05ce5ebea81537331d",
-    "url": "/globe/static/js/main.fe05ce5e.chunk.js"
+    "revision": "57b2c992e64b6f29daad",
+    "url": "/globe/static/js/main.57b2c992.chunk.js"
   },
   {
     "revision": "8ad47d1adc123bb28c75",
@@ -92,7 +92,7 @@ self.__precacheManifest = [
     "url": "/globe/static/media/cave.4bb4b870.png"
   },
   {
-    "revision": "1adce5529e1ad46bd4bd3d9156e3906e",
+    "revision": "6c971cb1ab2e89fd2bb32b0d19ad3bee",
     "url": "/globe/index.html"
   }
 ];
