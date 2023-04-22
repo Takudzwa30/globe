@@ -14,7 +14,7 @@ import HomeView from "../Views/HomeView";
 
 const routes = {
   main: {
-    path: "/",
+    path: "/globe",
     element: <MainLayout />,
     title: "Main",
     routes: {
