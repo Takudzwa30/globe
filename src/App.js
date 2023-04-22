@@ -66,7 +66,7 @@ function App() {
         >
           <Routes>
             {routeComponents}
-            <Route path="*" element={<NotFoundView />} />
+            <Route path="/globe/*" element={<NotFoundView />} />
           </Routes>
         </LayoutRouter>
       </BrowserRouter>
