@@ -74,28 +74,28 @@ const Footer = () => {
               <p>Canada</p>
             </div>
             <div className={Style.siteMap}>
-              <h6>Our Destinations</h6>
+              <h6>Our Activities</h6>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
             </div>
             <div className={Style.siteMap}>
-              <h6>Our Destinations</h6>
+              <h6>Travel Blogs</h6>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
             </div>
             <div className={Style.siteMap}>
-              <h6>Our Destinations</h6>
+              <h6>Our Blogs</h6>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>
             </div>
             <div className={Style.siteMap}>
-              <h6>Our Destinations</h6>
+              <h6>Contact Us</h6>
               <p>Canada</p>
               <p>Canada</p>
               <p>Canada</p>

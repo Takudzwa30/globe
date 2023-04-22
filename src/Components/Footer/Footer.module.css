@@ -43,8 +43,8 @@
   caret-color: var(--mint-green-color);
 }
 
-.emailField input:focus{
-    border: 1px solid var(--mint-green-color) !important;
+.emailField input:focus {
+  border: 1px solid var(--mint-green-color) !important;
 }
 
 .button {
@@ -83,11 +83,12 @@
 }
 
 .socialMedia svg {
-  font-size: 20px;
+  font-size: larger;
 }
 
 .link {
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .link:hover {
@@ -109,7 +110,12 @@
 }
 
 .siteMap p {
+  cursor: pointer;
   margin-bottom: 12px;
+}
+
+.siteMap p:hover {
+  color: #fff;
 }
 
 @media screen and (max-width: 768px) {
