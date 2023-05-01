@@ -44,9 +44,7 @@ const Footer = () => {
                 {...form.getInputProps("email")}
               />
 
-              <CustomButton colored >
-                Subscribe
-              </CustomButton>
+              <CustomButton colored>Subscribe</CustomButton>
             </div>
           </div>
           <div className={Style.mailBox}>
@@ -60,46 +58,65 @@ const Footer = () => {
             <div>
               <div className={Style.logo}></div>
               <div className={Style.socialMedia}>
-                <BsFacebook className={Style.link} />
-                <BsTwitter className={Style.link} />
-                <BsYoutube className={Style.link} />
-                <AiFillInstagram className={Style.link} />
+                <BsFacebook
+                  onClick={() =>
+                    window.open("https://github.com/Takudzwa30", "_blank")
+                  }
+                  className={Style.link}
+                />
+                <BsTwitter
+                  onClick={() =>
+                    window.open("https://github.com/Takudzwa30", "_blank")
+                  }
+                  className={Style.link}
+                />
+                <BsYoutube
+                  onClick={() =>
+                    window.open("https://github.com/Takudzwa30", "_blank")
+                  }
+                  className={Style.link}
+                />
+                <AiFillInstagram
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/takudzwa_allen/",
+                      "_blank"
+                    )
+                  }
+                  className={Style.link}
+                />
               </div>
             </div>
             <div className={Style.siteMap}>
               <h6>Our Destinations</h6>
               <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
+              <p>Alaksa</p>
+              <p>France</p>
+              <p>IceLand</p>
             </div>
             <div className={Style.siteMap}>
               <h6>Our Activities</h6>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
+              <p>Northern Lights</p>
+              <p>Cruising and sailing</p>
+              <p>Multi-activities</p>
+              <p>Kayaing</p>
             </div>
             <div className={Style.siteMap}>
               <h6>Travel Blogs</h6>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
+              <p>Bali Travel Guide</p>
+              <p>Sri Lanka travel Guide</p>
+              <p>Peru Travel Guide</p>
+              <p>Bali Travel Guide</p>
             </div>
             <div className={Style.siteMap}>
               <h6>Our Blogs</h6>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
+              <p>Our Story</p>
+              <p>Work with us</p>
             </div>
             <div className={Style.siteMap}>
               <h6>Contact Us</h6>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
-              <p>Canada</p>
+              <p>Our Story</p>
+              <p>Work with us</p>
             </div>
           </div>
         </Container>

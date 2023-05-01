@@ -4,7 +4,7 @@
   "homepage": "https://takudzwa30.github.io/globe/",
   "private": true,
   "dependencies": {
-    "@hybris-software/ui-kit": "^2.2.24",
+    "@hybris-software/ui-kit": "^2.2.39",
     "@hybris-software/use-ful-form": "^2.1.11",
     "@hybris-software/use-query": "^2.3.17",
     "@testing-library/jest-dom": "^5.16.5",
@@ -26,7 +26,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

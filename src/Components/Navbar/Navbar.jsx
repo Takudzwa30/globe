@@ -22,21 +22,35 @@ import Logo from "../../Assets/logos/logoDark.svg";
 import Style from "./Navbar.module.css";
 
 const Navbar = () => {
+  console.log(window.location.href);
   const [active, setActive] = useState(true);
   const [open, setOpen] = useState(false);
   return (
     <Container className={Style.navBarContainer}>
       <MobileMenu open={open} setOpen={setOpen} />
       <div className={Style.links}>
-        <div className={Style.flights} onClick={() => setActive(true)}>
+        <Link
+          to="globe/flights"
+          className={Style.flights}
+          onClick={() => setActive(true)}
+        >
           <IoAirplane className={Style.plane} />
           <p>Find Flight</p>
-        </div>
-        <div className={Style.hotels} onClick={() => setActive(false)}>
+        </Link>
+        <Link
+          to="globe/stays"
+          className={Style.hotels}
+          onClick={() => setActive(false)}
+        >
           <IoIosBed />
           <p>Find Stays</p>
-        </div>
-        <div className={active ? Style.selector : Style.selectorActive}></div>
+        </Link>
+        <div
+          style={{
+            display: window.location.pathname === "/globe/" ? "none" : "block",
+          }}
+          className={active ? Style.selector : Style.selectorActive}
+        ></div>
       </div>
 
       <Link className={Style.logo} to={"/globe"}>

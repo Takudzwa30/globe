@@ -8,9 +8,8 @@ import MainLayout from "../Layouts/MainLayout/MainLayout";
 
 // Views
 import HomeView from "../Views/HomeView";
-// import SolutionView from "../Views/Main/SolutionView";
-// import StrategyView from "../Views/Main/StrategyView";
-// import ContactView from "../Views/Main/ContactView";
+import FlightsView from "../Views/FlightsView";
+import StaysView from "../Views/StaysView";
 
 const routes = {
   main: {
@@ -24,23 +23,25 @@ const routes = {
         title: "Home",
         // icon: <AiFillHome />,
       },
-      solution: {
-        path: "/solution",
-        // element: <HomeView />,
-        title: "Solution",
-
+      flights: {
+        path: "/flights",
+        element: <FlightsView />,
+        title: "Flights",
+      },
+      stays: {
+        path: "/stays",
+        element: <StaysView />,
+        title: "Stays",
       },
       strategy: {
         path: "strategy",
         // element: <StrategyView />,
         title: "Strategy",
-
       },
       contact: {
         path: "contact",
         // element: <ContactView />,
         title: "Contact",
-
       },
     },
   },

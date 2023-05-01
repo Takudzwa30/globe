@@ -108,3 +108,9 @@
         margin-inline: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .buttons {
+      flex-direction: column;
+    }
+  }
