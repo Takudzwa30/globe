@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "7d70c153c3ffdfd6175b",
-    "url": "/globe/static/css/main.4b55cc4d.chunk.css"
+    "revision": "2b6d46564dd69df62a8f",
+    "url": "/globe/static/css/main.d567ed6c.chunk.css"
   },
   {
-    "revision": "7d70c153c3ffdfd6175b",
-    "url": "/globe/static/js/main.7d70c153.chunk.js"
+    "revision": "2b6d46564dd69df62a8f",
+    "url": "/globe/static/js/main.2b6d4656.chunk.js"
   },
   {
     "revision": "c1f9cde111304e2d7034",
@@ -92,7 +92,11 @@ self.__precacheManifest = [
     "url": "/globe/static/media/cave.4bb4b870.png"
   },
   {
-    "revision": "8e7f5957262ab7149f3a8cd2580a65a0",
+    "revision": "36c7706fe1b0f12cda046922d483c87e",
+    "url": "/globe/static/media/flightsHeroBG.36c7706f.png"
+  },
+  {
+    "revision": "49dbb29436669ec198827202c7908ea2",
     "url": "/globe/index.html"
   }
 ];

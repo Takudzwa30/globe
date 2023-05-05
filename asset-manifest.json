@@ -1,7 +1,7 @@
 {
-  "main.css": "/globe/static/css/main.4b55cc4d.chunk.css",
-  "main.js": "/globe/static/js/main.7d70c153.chunk.js",
-  "main.js.map": "/globe/static/js/main.7d70c153.chunk.js.map",
+  "main.css": "/globe/static/css/main.d567ed6c.chunk.css",
+  "main.js": "/globe/static/js/main.2b6d4656.chunk.js",
+  "main.js.map": "/globe/static/js/main.2b6d4656.chunk.js.map",
   "static/js/1.c1f9cde1.chunk.js": "/globe/static/js/1.c1f9cde1.chunk.js",
   "static/js/1.c1f9cde1.chunk.js.map": "/globe/static/js/1.c1f9cde1.chunk.js.map",
   "static/css/2.0247cc85.chunk.css": "/globe/static/css/2.0247cc85.chunk.css",
@@ -13,7 +13,7 @@
   "static/media/FlightandHotels.module.css": "/globe/static/media/hotelsBG.1bdc2f30.png",
   "static/media/iceViews.png": "/globe/static/media/iceViews.1505e237.png",
   "static/media/logoDark.svg": "/globe/static/media/logoDark.2b6b6280.svg",
-  "static/media/HeroSection.module.css": "/globe/static/media/homeHero.e2711ebf.png",
+  "static/media/HeroSection.module.css": "/globe/static/media/flightsHeroBG.36c7706f.png",
   "static/media/destinationTurkey.png": "/globe/static/media/destinationTurkey.4ba0f66c.png",
   "static/media/sydneyImage.png": "/globe/static/media/sydneyImage.93a383ff.png",
   "static/media/bakuImage.png": "/globe/static/media/bakuImage.527507e0.png",
@@ -25,9 +25,9 @@
   "static/media/dubaiImage.png": "/globe/static/media/dubaiImage.73f5891e.png",
   "static/media/northernLights.png": "/globe/static/media/northernLights.dd9f31ac.png",
   "static/media/cave.png": "/globe/static/media/cave.4bb4b870.png",
-  "static/css/main.4b55cc4d.chunk.css.map": "/globe/static/css/main.4b55cc4d.chunk.css.map",
+  "static/css/main.d567ed6c.chunk.css.map": "/globe/static/css/main.d567ed6c.chunk.css.map",
   "static/css/2.0247cc85.chunk.css.map": "/globe/static/css/2.0247cc85.chunk.css.map",
   "index.html": "/globe/index.html",
-  "precache-manifest.ce6fcca3879045fc1ac6b6d059f8cfe7.js": "/globe/precache-manifest.ce6fcca3879045fc1ac6b6d059f8cfe7.js",
+  "precache-manifest.7ca3167329307afc2b7415650e244400.js": "/globe/precache-manifest.7ca3167329307afc2b7415650e244400.js",
   "service-worker.js": "/globe/service-worker.js"
 }
