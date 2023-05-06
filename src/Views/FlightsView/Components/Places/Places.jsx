@@ -8,7 +8,13 @@ import CustomButton from "../../../../Components/CustomButton/CustomButton";
 
 // Images
 import melbourne from "../../../../Assets/images/melbourneBG.png";
+import london from "../../../../Assets/images/londonBG.png";
+import columbia from "../../../../Assets/images/columbiaBG.png";
+import paris from "../../../../Assets/images/parisBG.png";
 import forestOne from "../../../../Assets/images/forestOne.png";
+import forestTwo from "../../../../Assets/images/forestTwo.png";
+import forestThree from "../../../../Assets/images/forestThree.png";
+import forestFour from "../../../../Assets/images/forestFour.png";
 
 // Styles
 import Style from "./Places.module.css";
@@ -22,22 +28,22 @@ const places = [
     price: "700",
   },
   {
-    bg: melbourne,
-    city: "Melbourne",
+    bg: paris,
+    city: "Paris",
     subTitle: "An amazing journey",
-    price: "700",
+    price: "600",
   },
   {
-    bg: melbourne,
-    city: "Melbourne",
+    bg: london,
+    city: "London",
     subTitle: "An amazing journey",
-    price: "700",
+    price: "350",
   },
   {
-    bg: melbourne,
-    city: "Melbourne",
+    bg: columbia,
+    city: "Columbia",
     subTitle: "An amazing journey",
-    price: "700",
+    price: "900",
   },
 ];
 
@@ -101,19 +107,19 @@ const Places = () => {
           />
           <div
             style={{
-              backgroundImage: `url(${forestOne})`,
+              backgroundImage: `url(${forestTwo})`,
             }}
             className={Style.box}
           />
           <div
             style={{
-              backgroundImage: `url(${forestOne})`,
+              backgroundImage: `url(${forestThree})`,
             }}
             className={Style.box}
           />
           <div
             style={{
-              backgroundImage: `url(${forestOne})`,
+              backgroundImage: `url(${forestFour})`,
             }}
             className={Style.box}
           />

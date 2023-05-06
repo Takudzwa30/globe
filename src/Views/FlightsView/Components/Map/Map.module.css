@@ -11,16 +11,6 @@
   margin-top: 15px;
 }
 
-/* .seeMore {
-  border: 1px solid #8dd3bb;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  padding: 12px 15px;
-  color: #112211;
-} */
-
 .mapWrapper {
   background: #8dd3bb;
   height: 600px;
@@ -35,4 +25,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+  .head {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
 }

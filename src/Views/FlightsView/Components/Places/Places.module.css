@@ -137,4 +137,8 @@
   .cards {
     grid-template-columns: 1fr;
   }
+  .head{
+    flex-direction: column;
+    text-align: center;
+  }
 }
