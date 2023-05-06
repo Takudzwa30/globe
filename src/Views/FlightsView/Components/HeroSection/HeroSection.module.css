@@ -8,6 +8,7 @@
     url("../../../../Assets/images/flightsHeroBG.png");
   max-width: 1440px;
   margin-inline: auto;
+  padding-top: 80px;
   height: 600px;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,9 +22,20 @@
 }
 
 .hero h1 {
-  font-size: 5rem;
+  font-size: 4rem;
+  max-width: 540px;
+  margin-bottom: 10px;
 }
 
 .hero h2 {
   font-size: 2.813rem;
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+  .hero h1 {
+    max-width: none;
+  }
 }

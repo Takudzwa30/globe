@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 
+// Libraires
+import { Container } from "@hybris-software/ui-kit";
 
 // Styles
 import Style from "./HeroSection.module.css";
 
 const HeroSection = () => {
-
-
   return (
     <div className={Style.hero}>
-      <h2>Helping Others</h2>
-      <h1>Live & Travel</h1>
-      <h5>Special offers to suit your plan</h5>
-      
+      <Container>
+        <h1>Make your travel whishlist, we’ll do the rest</h1>
+        <h5>Special offers to suit your plan</h5>
+      </Container>
     </div>
   );
 };
