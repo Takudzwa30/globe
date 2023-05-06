@@ -1,0 +1,140 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.head h6 {
+  color: #112211;
+  opacity: 0.75;
+  margin-top: 15px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px 15px;
+  margin-bottom: 80px;
+}
+
+.card {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  height: 420px;
+  border-radius: 12px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.cardHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 15px;
+}
+
+.packing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.left {
+  height: 100%;
+  background: var(--mint-green-color);
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+.top h1 {
+  max-width: 300px;
+}
+
+.left > p {
+  font-weight: 400;
+  color: #112211;
+  margin-block: 25px auto;
+}
+
+.from {
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  height: 65px;
+  width: 77px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.box {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border: 2px solid #8dd3bb;
+  border-radius: 12px;
+}
+
+@media screen and (max-width: 1300px) {
+  .cardHeading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 20px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .top {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .top h1 {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .packing {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 430px;
+    text-align: center;
+  }
+  .from{
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

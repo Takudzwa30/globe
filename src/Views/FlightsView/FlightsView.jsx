@@ -4,6 +4,7 @@ import React from "react";
 import HeroSection from "./Components/HeroSection/HeroSection";
 import Search from "../../Components/Search/Search";
 import Map from "./Components/Map/Map";
+import Places from "./Components/Places/Places";
 
 // Styles
 import Style from "./FlightsView.module.css";
@@ -21,6 +22,10 @@ const FlightsView = () => {
 
       <section>
         <Map />
+      </section>
+
+      <section className={Style.places}>
+        <Places />
       </section>
     </>
   );

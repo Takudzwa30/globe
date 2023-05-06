@@ -118,6 +118,26 @@
   color: var(--light-blue);
 }
 
+/* Reverse BTN  */
+
+.coloredReverseBtn {
+  background-color: var(--mint-green-color);
+  text-transform: capitalize;
+  border: 1px solid var(--blackish-green-color);
+  font-weight: 600;
+  color: var(--blackish-green-color);
+}
+
+.coloredReverseBtn:hover {
+  background-color: var(--white-color);
+  border: 1px solid var(--mint-green-color);
+  color: var(--mint-green-color);
+}
+
+.coloredReverseBtn:hover > a {
+  color: red;
+}
+
 /* ------- Disabled Button ------- */
 .buttonStyleDisabled {
   background-color: var(--disabled-btn-color);

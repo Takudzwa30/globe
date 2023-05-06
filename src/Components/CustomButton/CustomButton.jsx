@@ -22,6 +22,7 @@ const CustomButton = ({ children, baseClassName, to, ...props }) => (
       baseClassName,
       props.border && Theme.borderBtn,
       props.colored && Theme.coloredBtn,
+      props.coloredReverse && Theme.coloredReverseBtn,
       props.icon && Theme.iconBtn
     )}
     {...props}
