@@ -22,7 +22,6 @@ import Logo from "../../Assets/logos/logoDark.svg";
 import Style from "./Navbar.module.css";
 
 const Navbar = () => {
-  console.log(window.location.href);
   const [active, setActive] = useState(true);
   const [open, setOpen] = useState(false);
   return (
