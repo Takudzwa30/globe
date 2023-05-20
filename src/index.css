@@ -12,6 +12,9 @@
   --white-color: #ffffff;
   --black-color: #000;
   --body-bg: #fafbfc;
+  --bg: #e3e4e8;
+  --fg: #2e3138;
+  --primary: #112211;
 }
 
 * {
