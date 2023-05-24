@@ -11,6 +11,8 @@ import HomeView from "../Views/HomeView";
 import FlightsView from "../Views/FlightsView";
 import StaysView from "../Views/StaysView";
 
+import FlightDetailsView from "../Views/FlightDetailsView";
+
 const routes = {
   main: {
     path: "/globe",
@@ -38,10 +40,10 @@ const routes = {
         // element: <StrategyView />,
         title: "Strategy",
       },
-      contact: {
-        path: "contact",
-        // element: <ContactView />,
-        title: "Contact",
+      flightDetails: {
+        path: "/flight-details",
+        element: <FlightDetailsView />,
+        title: "Flight Details",
       },
     },
   },
