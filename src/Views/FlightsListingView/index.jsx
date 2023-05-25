@@ -1,3 +1,3 @@
-import FlightsView from "./FlightsView";
+import FlightsListingView from "./FlightsListingView";
 
-export default FlightsView;
+export default FlightsListingView;

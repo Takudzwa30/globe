@@ -9,6 +9,7 @@ import MainLayout from "../Layouts/MainLayout/MainLayout";
 // Views
 import HomeView from "../Views/HomeView";
 import FlightsView from "../Views/FlightsView";
+import FlightsListingView from "../Views/FlightsListingView";
 import StaysView from "../Views/StaysView";
 
 const routes = {
@@ -33,10 +34,10 @@ const routes = {
         element: <StaysView />,
         title: "Stays",
       },
-      strategy: {
-        path: "strategy",
-        // element: <StrategyView />,
-        title: "Strategy",
+      flightsList: {
+        path: "/flights-list",
+        element: <FlightsListingView />,
+        title: "Flights",
       },
       contact: {
         path: "contact",
