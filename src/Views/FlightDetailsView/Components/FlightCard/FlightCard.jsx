@@ -7,6 +7,9 @@ import { BsFillStopwatchFill } from "react-icons/bs";
 import { MdOutlineAirlineSeatReclineNormal } from "react-icons/md";
 import lineWithDot from "../../../../Assets/images/lineWithDot.png";
 
+// Logos
+import emiratesLogo from "../../../../Assets/images/emiratesLogo.png";
+
 // Styles
 import Style from "./FlightCard.module.css";
 
@@ -21,7 +24,7 @@ const FlightCard = () => {
       </div>
       <div className={Style.center}>
         <div className={Style.planeDetails}>
-          <img src="" alt="Emirates" />
+          <img src={emiratesLogo} alt="Emirates" />
           <div className={Style.details}>
             <h4>Emirates</h4>
             <p>Airbus A320</p>
