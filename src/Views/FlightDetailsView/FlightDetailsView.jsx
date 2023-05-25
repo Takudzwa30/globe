@@ -5,8 +5,16 @@ import { Container } from "@hybris-software/ui-kit";
 
 // Components
 import CustomButton from "../../Components/CustomButton/CustomButton";
+import FlightCard from "./Components/FlightCard/FlightCard";
+
+// Images
+import pilotCabin from "../../Assets/images/pilotCabin.png";
+import flightSeats from "../../Assets/images/flightSeats.png";
+import familyTogether from "../../Assets/images/familyTogether.png";
+import stopWatch from "../../Assets/images/stopWatch.png";
 
 // Icons
+import { BsCheckLg } from "react-icons/bs";
 import { AiOutlineHeart, AiFillCheckSquare } from "react-icons/ai";
 import chevronForward from "../../Assets/images/chevronForward.png";
 import location from "../../Assets/images/location.png";
@@ -15,7 +23,32 @@ import share from "../../Assets/images/share.png";
 // Styles
 import Style from "./FlightDetailsView.module.css";
 
+const classData = [
+  {
+    flightClass: "Economy",
+  },
+  {
+    flightClass: "First Class",
+  },
+  {
+    flightClass: "Busines Class",
+  },
+];
+
+const images = [
+  pilotCabin,
+  familyTogether,
+  flightSeats,
+  pilotCabin,
+  familyTogether,
+  flightSeats,
+  pilotCabin,
+  flightSeats,
+  pilotCabin,
+];
+
 const FlightDetailsView = () => {
+  const [selectedClass, setSelectedClass] = useState("Economy");
   return (
     <Container>
       <div className={Style.breadCrumb}>
@@ -63,10 +96,57 @@ const FlightDetailsView = () => {
       </div>
       <div className={Style.bigPlane} />
       <div className={Style.features}>
-        <h4>Basic Economy Features</h4>
-        <div className={Style.classes}></div>
+        <h4>Basic {selectedClass} Features</h4>
+        <div className={Style.classes}>
+          {classData.map((item, index) => {
+            return (
+              <Class
+                key={index}
+                flightClass={item.flightClass}
+                setSelectedClass={setSelectedClass}
+                selectedClass={selectedClass}
+              />
+            );
+          })}
+        </div>
       </div>
+      <div className={Style.classImages}>
+        {images.map((item, index) => {
+          return (
+            <img key={index} src={item} alt="" className={Style.classImage} />
+          );
+        })}
+      </div>
+      <div className={Style.policies}>
+        <h4>Emirates Airlines Policies</h4>
+        <div className={Style.policyWrapper}>
+          <div className={Style.policy}>
+            <img src={stopWatch} alt="" />
+            Pre-flight cleaning, installation of cabin HEPA filters.
+          </div>
+          <div className={Style.policy}>
+            <img src={stopWatch} alt="" />
+            Pre-flight health screening questions.
+          </div>
+        </div>
+      </div>
+      <FlightCard />
     </Container>
+  );
+};
+
+const Class = ({ flightClass, setSelectedClass, selectedClass }) => {
+  const isSelected = selectedClass === flightClass;
+
+  const handleClick = () => {
+    setSelectedClass(flightClass);
+  };
+
+  return (
+    <div className={Style.class} onClick={handleClick}>
+      <BsCheckLg className={isSelected ? Style.checked : Style.unChecked} />
+      <p>{flightClass}</p>
+    </div>
   );
 };
 

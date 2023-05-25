@@ -1,0 +1,21 @@
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 12px;
+  padding: 30px;
+  color: #112211;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top h5:nth-of-type(2) {
+  opacity: 0.75;
+}
+
+.center {
+  margin-block: 25px 40px;
+  
+}
