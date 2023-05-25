@@ -123,7 +123,6 @@
 .coloredReverseBtn {
   background-color: var(--mint-green-color);
   text-transform: capitalize;
-  border: 1px solid var(--blackish-green-color);
   font-weight: 600;
   color: var(--blackish-green-color);
 }
