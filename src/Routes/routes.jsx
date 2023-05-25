@@ -12,6 +12,8 @@ import FlightsView from "../Views/FlightsView";
 import FlightsListingView from "../Views/FlightsListingView";
 import StaysView from "../Views/StaysView";
 
+import FlightDetailsView from "../Views/FlightDetailsView";
+
 const routes = {
   main: {
     path: "/globe",
@@ -39,10 +41,10 @@ const routes = {
         element: <FlightsListingView />,
         title: "Flights",
       },
-      contact: {
-        path: "contact",
-        // element: <ContactView />,
-        title: "Contact",
+      flightDetails: {
+        path: "/flight-details",
+        element: <FlightDetailsView />,
+        title: "Flight Details",
       },
     },
   },
