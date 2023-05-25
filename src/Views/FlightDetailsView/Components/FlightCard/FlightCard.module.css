@@ -70,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
+  gap: 45px 70px;
 }
 
 .departureDetails {
@@ -101,4 +101,24 @@
 
 .icons > svg {
   font-size: 48px;
+}
+
+@media screen and (max-width: 991px) {
+  .bottom,
+  .icons {
+    flex-direction: column;
+  }
+  .icons img {
+    transform: rotate(90deg);
+  }
+  .icons img:nth-of-type(2) {
+    transform: rotate(270deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .center {
+    flex-direction: column;
+    gap: 40px;
+  }
 }
