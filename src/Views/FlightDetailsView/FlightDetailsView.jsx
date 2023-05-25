@@ -44,7 +44,6 @@ const images = [
   flightSeats,
   pilotCabin,
   flightSeats,
-  pilotCabin,
 ];
 
 const FlightDetailsView = () => {
@@ -113,7 +112,12 @@ const FlightDetailsView = () => {
       <div className={Style.classImages}>
         {images.map((item, index) => {
           return (
-            <img key={index} src={item} alt="" className={Style.classImage} />
+            <div
+              key={index}
+              style={{ backgroundImage: `url(${item})` }}
+              alt="flight image"
+              className={Style.classImage}
+            />
           );
         })}
       </div>
