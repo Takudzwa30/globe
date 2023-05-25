@@ -1,0 +1,98 @@
+.breadCrumb {
+  display: flex;
+  gap: 10px;
+  margin-block: 50px 30px;
+  cursor: default;
+}
+
+.breadCrumb p:nth-of-type(2),
+.breadCrumb p:nth-of-type(1) {
+  color: #ff8682;
+}
+
+.breadCrumb p:nth-of-type(3) {
+  color: var(--blackish-green-color);
+  opacity: 0.75;
+}
+
+.detailsLeft p {
+  display: flex;
+  gap: 5px;
+  margin-block: 15px 10px;
+}
+
+.flightDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.reviews p span {
+  font-weight: 700;
+}
+
+.favorite,
+.rating,
+.share {
+  border: 1px solid var(--mint-green-color);
+  border-radius: 4px;
+}
+
+.rating {
+  width: 40px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  color: var(--blackish-green-color);
+}
+
+.detailsRight h3 {
+  color: #ff8682;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.buttonsWrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.favorite,
+.share {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.heart {
+  font-size: 20px;
+}
+
+.bigPlane {
+  background: bottom / cover no-repeat url("../../Assets/images/bigPlane.png");
+  border-radius: 12px;
+  height: 400px;
+  margin-block: 40px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+
+.features h4 {
+  font-weight: 700;
+}
+
