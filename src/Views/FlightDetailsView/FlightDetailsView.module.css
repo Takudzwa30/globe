@@ -167,3 +167,11 @@
   line-height: 20px;
   color: #112211;
 }
+
+
+@media screen and (max-width: 768px) {
+    .flightDetails{
+        flex-direction: column;
+    }
+    /* .deta */
+}

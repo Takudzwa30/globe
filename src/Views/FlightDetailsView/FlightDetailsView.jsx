@@ -131,6 +131,7 @@ const FlightDetailsView = () => {
         </div>
       </div>
       <FlightCard />
+      <FlightCard />
     </Container>
   );
 };
@@ -144,7 +145,12 @@ const Class = ({ flightClass, setSelectedClass, selectedClass }) => {
 
   return (
     <div className={Style.class} onClick={handleClick}>
-      <BsCheckLg className={isSelected ? Style.checked : Style.unChecked} />
+      <BsCheckLg
+        style={{
+          color: "white",
+        }}
+        className={isSelected ? Style.checked : Style.unChecked}
+      />
       <p>{flightClass}</p>
     </div>
   );
