@@ -1,35 +1,17 @@
 // paths
-import { paths } from "../../Routes/routes";
+import { routes } from "../../Routes/routes";
 
-const findPath = (paths, path) => {
-  let isPathExists = false;
-  Object.entries(paths).forEach(([, route]) => {
-    if (route.routes) {
-      isPathExists = findPath(route.routes, path);
-    } else {
-      if (route[path.slice(1)] === path) {
-        isPathExists = true;
+const getPageTitle = (pathName) => {
+  for (let x in Object.entries(routes)) {
+    const [, layoutData] = Object.entries(routes)[x];
+    for (let y in Object.entries(layoutData.routes)) {
+      const [, routeData] = Object.entries(layoutData.routes)[y];
+      if (layoutData.path.concat(routeData.path) === pathName) {
+        return `Globe | ${routeData.title}`;
       }
     }
-  });
-  return isPathExists;
-};
-
-const getPageTitle = (pathname, clientTitle) => {
-  const isPathExists = findPath(paths, pathname);
-
-  return pathname === "/globe/"
-    ? `${clientTitle} | Homepage`
-    : !isPathExists
-    ? `${clientTitle} | 404 Not Found`
-    : pathname.indexOf("-") === -1
-    ? `${clientTitle} | ` + pathname.charAt(1).toUpperCase() + pathname.slice(2)
-    : `${clientTitle} | ` +
-      pathname
-        .replace("-", " ")
-        .charAt(1)
-        .toUpperCase() +
-      pathname.replace("-", " ").slice(2);
+  }
+  return "Globe | 404 Not Found";
 };
 
 export default getPageTitle;
