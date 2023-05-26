@@ -11,7 +11,6 @@ import HomeView from "../Views/HomeView";
 import FlightsView from "../Views/FlightsView";
 import FlightsListingView from "../Views/FlightsListingView";
 import StaysView from "../Views/StaysView";
-
 import FlightDetailsView from "../Views/FlightDetailsView";
 
 const routes = {
