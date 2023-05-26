@@ -61,7 +61,7 @@ function App() {
       <BrowserRouter>
         <LayoutRouter
           loader={<Loader />}
-          loadingTime={1000}
+          loadingTime={2000}
           clientTitle="Globe"
         >
           <Routes>

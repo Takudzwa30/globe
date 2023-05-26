@@ -1,0 +1,45 @@
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 16px rgba(17, 34, 17, 0.05);
+  border-radius: 12px;
+  padding: 25px;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: 160px 1fr;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.reviews p span {
+  font-weight: 700;
+}
+
+.rating {
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #8dd3bb;
+  border-radius: 4px;
+  width: 40px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  text-align: right;
+}
+
+.price h4{
+    font-weight: 700;
+    color: #FF8682;
+}
