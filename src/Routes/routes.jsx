@@ -39,7 +39,7 @@ const routes = {
       flightsList: {
         path: "/flights-list",
         element: <FlightsListingView />,
-        title: "Flights",
+        title: "Flights List",
       },
       flightDetails: {
         path: "/flight-details",
