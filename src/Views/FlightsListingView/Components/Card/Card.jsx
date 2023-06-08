@@ -18,12 +18,6 @@ const Card = ({
 }) => {
   return (
     <div className={Style.card}>
-      {/* <div
-        className={Style.logo}
-        style={{
-          backgroundImage: `url(${emiratesLogo})`,
-        }}
-      /> */}
       <img src={emiratesLogo} alt="" />
       <div className={Style.flightDetails}>
         <div className={Style.top}>
@@ -41,6 +35,12 @@ const Card = ({
       </div>
     </div>
   );
+};
+
+const Times = () => {
+  return <div className={Style.times}>
+    
+  </div>;
 };
 
 export default Card;
