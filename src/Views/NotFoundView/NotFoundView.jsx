@@ -92,7 +92,7 @@ const NotFoundView = () => {
         coloredReverse
         onClick={() => navigate("/globe")}
       >
-        Go Home
+        Go To HomePage
       </CustomButton>
     </div>
   );
