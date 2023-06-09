@@ -4,7 +4,7 @@ import LayoutRouter from "./Components/Router/LayoutRouter";
 import Loader from "./Components/Loader/Loader";
 
 // Libraries
-import { HashRouter, Routes, Route } from "react-router-dom";import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@hybris-software/ui-kit";
 
 // Data
