@@ -2,7 +2,7 @@
 import { routes } from "../../Routes/routes";
 
 const getPageTitle = (pathName) => {
-  if (pathName === "/globe") {
+  if (pathName === "/") {
     return "Globe | Home Page";
   } else {
     for (let x in Object.entries(routes)) {
