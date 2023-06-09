@@ -46,7 +46,7 @@ const Navbar = () => {
         </Link>
         <div
           style={{
-            display: window.location.pathname === "/globe/" ? "none" : "block",
+            display: window.location.pathname === "/" ? "none" : "block",
           }}
           className={active ? Style.selector : Style.selectorActive}
         ></div>
