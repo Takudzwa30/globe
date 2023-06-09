@@ -5,7 +5,6 @@ import Loader from "./Components/Loader/Loader";
 
 // Libraries
 import { HashRouter, Routes, Route } from "react-router-dom";import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ThemeProvider } from "@hybris-software/ui-kit";
 
 // Data
@@ -59,18 +58,18 @@ function App() {
         },
       }}
     >
-      <Router>
+      <HashRouter>
         <LayoutRouter
           loader={<Loader />}
           loadingTime={2000}
           clientTitle="Globe"
         >
-          <Switch>
+          <Routes>
             {routeComponents}
             <Route path="*" element={<NotFoundView />} />
-          </Switch>
+          </Routes>
         </LayoutRouter>
-      </Router>
+      </HashRouter>
     </ThemeProvider>
   );
 }
