@@ -29,7 +29,7 @@ const Navbar = () => {
       <MobileMenu open={open} setOpen={setOpen} />
       <div className={Style.links}>
         <Link
-          to="globe/flights"
+          to="/flights"
           className={Style.flights}
           onClick={() => setActive(true)}
         >
@@ -37,7 +37,7 @@ const Navbar = () => {
           <p>Find Flight</p>
         </Link>
         <Link
-          to="globe/stays"
+          to="/stays"
           className={Style.hotels}
           onClick={() => setActive(false)}
         >
@@ -52,7 +52,7 @@ const Navbar = () => {
         ></div>
       </div>
 
-      <Link className={Style.logo} to={"/globe"}>
+      <Link className={Style.logo} to={"/"}>
         <img src={Logo} alt="" />
       </Link>
 
