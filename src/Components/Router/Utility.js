@@ -1,6 +1,5 @@
 // paths
 import { routes } from "../../Routes/routes";
-import { routes } from "../../Routes/routes";
 
 const getPageTitle = (pathName) => {
   for (let x in Object.entries(routes)) {
