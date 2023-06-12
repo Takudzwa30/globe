@@ -16,8 +16,8 @@ const getPageTitle = (pathName) => {
         }
       }
     }
-    return "Globe | 404 Not Found";
   }
+  return "Globe | 404 Not Found";
 };
 
 export default getPageTitle;
