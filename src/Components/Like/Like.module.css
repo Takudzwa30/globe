@@ -1,12 +1,14 @@
 .favorite {
   border: 1px solid var(--mint-green-color);
   border-radius: 4px;
+  background: transparent;
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .like,
@@ -17,4 +19,9 @@
 .like,
 .disLike {
   color: #4c4850;
+}
+
+.favorite:hover {
+  border: 1px solid var(--mint-green-color);
+  background: var(--mint-green-color);
 }
