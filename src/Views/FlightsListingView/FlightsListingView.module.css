@@ -1,5 +1,38 @@
+.headingFilters {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 200px 50px;
+  gap: 20px;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: 340px 1fr;
   padding-top: 50px;
+}
+
+.search {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: var(--mint-green-color);
+  color: var(--blackish-green-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: 1px var(--mint-green-color) solid;
+  transition: 0.3s ease all;
+}
+
+.searchIcon {
+  font-size: 22px;
+}
+
+.search:hover {
+  width: 50px;
+  height: 50px;
+  color: var(--mint-green-color);
+  background: #fff;
+  border: 1px var(--mint-green-color) solid;
 }
