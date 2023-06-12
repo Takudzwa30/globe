@@ -4,7 +4,7 @@
   border-radius: 12px;
   padding: 25px;
   display: grid;
-  gap: 25px;
+  gap: 35px;
   grid-template-columns: 160px 1fr;
 }
 
@@ -39,7 +39,44 @@
   text-align: right;
 }
 
-.price h4{
-    font-weight: 700;
-    color: #FF8682;
+.price h4 {
+  font-weight: 700;
+  color: #ff8682;
 }
+
+.times,
+.time {
+  display: flex;
+}
+
+.times,
+.separator {
+  margin-block: 20px;
+}
+
+.time {
+  gap: 10px;
+}
+
+.times {
+  gap: 40px;
+  color: #112211;
+}
+
+.stops {
+  opacity: 0.78;
+}
+
+.separator {
+  background: #112211;
+  opacity: 0.25;
+  width: 100%;
+  height: 1px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 15px;
+}
+

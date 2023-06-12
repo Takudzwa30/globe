@@ -77,7 +77,7 @@ const FlightDetailsView = () => {
           <div className={Style.buttonsWrapper}>
             <div className={Style.favorite}>
               {" "}
-              <AiOutlineHeart className={Style.heart} />{" "}
+              <AiOutlineHeart className={Style.like} />{" "}
             </div>
             <div className={Style.share}>
               <img src={share} alt="" />

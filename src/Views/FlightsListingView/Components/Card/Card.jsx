@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+
+// Compoents
+import CustomButton from "../../../../Components/CustomButton/CustomButton";
+
+// Icons
+import { AiOutlineHeart } from "react-icons/ai";
 
 // Images
 import emiratesLogo from "../../../../Assets/images/emiratesLogo.png";
 
 // Styles
 import Style from "./Card.module.css";
+import Like from "../../../../Components/Like/Like";
 
 const Card = ({
   logoImage,
@@ -15,7 +22,14 @@ const Card = ({
   arrival,
   favourite,
   nonStop,
+  departTime = "12:00 pm",
+  arriveTime = "01:28 pm",
+  stops,
+  duration = "2h 28m",
+  fromTo = "EWR-BNA",
 }) => {
+  const [like, setLike] = useState(false);
+
   return (
     <div className={Style.card}>
       <img src={emiratesLogo} alt="" />
@@ -32,15 +46,38 @@ const Card = ({
             <h4>$104</h4>
           </div>
         </div>
+        <div className={Style.times}>
+          <div className={Style.time}>
+            <h6>{departTime}</h6> - <h6>{arriveTime}</h6>
+          </div>
+          <div className={Style.stops}>
+            {stops ? <p>{stops}</p> : <p>non stop</p>}
+          </div>
+          <div>
+            <h6>{duration}</h6>
+            <p>{fromTo}</p>
+          </div>
+        </div>
+        <div className={Style.times}>
+          <div className={Style.time}>
+            <h6>{departTime}</h6> - <h6>{arriveTime}</h6>
+          </div>
+          <div className={Style.stops}>
+            {stops ? <p>{stops}</p> : <p>non stop</p>}
+          </div>
+          <div>
+            <h6>{duration}</h6>
+            <p>{fromTo}</p>
+          </div>
+        </div>
+        <div className={Style.separator} />
+        <div className={Style.buttons}>
+          <Like like={like} setLike={setLike} />
+          <CustomButton coloredReverse>View Deals</CustomButton>
+        </div>
       </div>
     </div>
   );
-};
-
-const Times = () => {
-  return <div className={Style.times}>
-    
-  </div>;
 };
 
 export default Card;
