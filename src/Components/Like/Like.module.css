@@ -1,0 +1,20 @@
+.favorite {
+  border: 1px solid var(--mint-green-color);
+  border-radius: 4px;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.like,
+.disLike {
+  font-size: 20px;
+}
+
+.like,
+.disLike {
+  color: #4c4850;
+}
