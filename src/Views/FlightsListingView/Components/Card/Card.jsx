@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // Compoents
 import CustomButton from "../../../../Components/CustomButton/CustomButton";
+import Like from "../../../../Components/Like/Like";
 
 // Icons
 import { AiOutlineHeart } from "react-icons/ai";
@@ -11,7 +12,6 @@ import emiratesLogo from "../../../../Assets/images/emiratesLogo.png";
 
 // Styles
 import Style from "./Card.module.css";
-import Like from "../../../../Components/Like/Like";
 
 const Card = ({
   logoImage,
