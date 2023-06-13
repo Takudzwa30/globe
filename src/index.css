@@ -130,10 +130,46 @@ p {
 
 /* TODO need to check the font-size in responsive to verify how to change the root font size  */
 
-/* Date Range defined ranges hidden */
-.rdrDefinedRangesWrapper {
+/* React Date Picker styles  */
+.react-datepicker__tab-loop {
+  position: absolute;
+  top: 0;
+}
+
+.react-datepicker__header {
+  background: var(--mint-green-color);
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__day--selected,
+.react-datepicker__day--in-selecting-range,
+.react-datepicker__day--in-range {
+  background: var(--mint-green-color);
+  color: #000;
+}
+
+.react-datepicker__day--selecting-range-start,
+.react-datepicker__day--selecting-range-end,
+.react-datepicker__day--range-end,
+.react-datepicker__day--range-start {
+  background: var(--mint-green-color);
+  color: #000;
+}
+
+.react-datepicker__day--in-selecting-range:not(
+    .react-datepicker__day--in-range,
+    .react-datepicker__month-text--in-range,
+    .react-datepicker__quarter-text--in-range,
+    .react-datepicker__year-text--in-range
+  ) {
+  background: var(--light-mint-green-color);
+  color: #000;
+}
+
+.react-datepicker__triangle {
   display: none !important;
 }
+/* React Date Picker styles  */
 
 @media screen and (max-width: 768px) {
   :root {

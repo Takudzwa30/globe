@@ -1,7 +1,7 @@
 .headingFilters {
   margin-top: 50px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 200px 50px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 265px 50px;
   gap: 20px;
 }
 

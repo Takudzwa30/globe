@@ -1,63 +1,57 @@
-import React, { useState } from "react";
+import React, { useState, forwardRef } from "react";
 
-// Components
-import { DateRangePicker } from "react-date-range";
-import { addDays } from "date-fns";
+// Libraries
+import DatePicker from "react-datepicker";
+import moment from "moment";
+
+// Icons
+import calendar from "../../Assets/icons/calendar.svg";
+import downArrow from "../../Assets/icons/downArrow.svg";
 
 // Styles
 import Style from "./DateRange.module.css";
-import "react-date-range/dist/styles.css"; // main css file
-import "react-date-range/dist/theme/default.css"; // theme css file
 
-const DateRange = ({ ...props }) => {
-  // Variables
-  const [show, setShow] = useState(false);
-  const [state, setState] = useState([
-    {
-      startDate: new Date(),
-      endDate: addDays(new Date(), 7),
-      key: "selection",
-    },
-  ]);
-
+const DateRange = ({
+  placeHolder,
+  label,
+  startDate,
+  endDate,
+  dateRange,
+  setDateRange,
+}) => {
+  // Functions
   function formatDate(dateString) {
-    const dateObj = new Date(dateString);
-    const day = dateObj.getDate();
-    const month = dateObj.toLocaleString("default", { month: "short" });
-    const year = dateObj.getFullYear();
-
-    return `${day < 10 ? "0" : ""}${day} ${month} ${year}`;
+    const date = new Date(dateString);
+    const day = date.getDate().toString().padStart(2, "0");
+    const month = (date.getMonth() + 1).toString().padStart(2, "0");
+    const year = date.getFullYear().toString();
+    const formattedDate = `${day}/${month}/${year}`;
+    return formattedDate;
   }
 
+  const ExampleCustomInput = forwardRef(({ value, onClick }, ref) => (
+    <>
+      <button className={Style.example} onClick={onClick} ref={ref}>
+      <h6 className={Style.title}>{label}</h6>
+        <img src={calendar} alt="" />
+        {startDate && endDate !== null
+          ? dateRange && formatDate(startDate) + "  -  " + formatDate(endDate)
+          : placeHolder}
+      </button>
+    </>
+  ));
+
   return (
-    <div className={Style.rangeWrapper} onClick={() => setShow(true)}>
-      <p>{props.label}</p>
-      <div
-        style={{
-          display: show ? "block" : "none",
-        }}
-        className={Style.range}
-      >
-        <DateRangePicker
-          onChange={(item) => {
-            setState([item.selection]);
-            if (item.selection) {
-              setShow(false);
-            }
-          }}
-          showSelectionPreview={true}
-          moveRangeOnFirstSelection={false}
-          months={1}
-          ranges={state}
-          direction="horizontal"
-        />
-      </div>
-      <p>{`${
-        state[0]["startDate"] ? formatDate(state[0]["startDate"]) : "DD/MM/YYY"
-      } - ${
-        state[0]["endDate"] ? formatDate(state[0]["endDate"]) : "DD/MM/YYY"
-      }`}</p>
-    </div>
+    <DatePicker
+      selectsRange={true}
+      startDate={startDate}
+      endDate={endDate}
+      onChange={(update) => {
+        setDateRange(update);
+      }}
+      minDate={moment().toDate()}
+      customInput={<ExampleCustomInput />}
+    />
   );
 };
 

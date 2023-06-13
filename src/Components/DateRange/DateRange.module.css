@@ -1,36 +1,43 @@
-.rangeWrapper {
+.example {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   position: relative;
-  min-width: 150px;
-  z-index: 2343;
-
+  padding: 11px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  background: transparent;
+  border: 1px solid #e7e7e7;
+  border-radius: 3px;
+  width: 100%;
+  color: grey;
 }
 
-.rangeWrapper p:nth-of-type(1) {
+.example h6 {
   font-weight: 400;
   font-size: 14px;
   position: absolute;
+  color: #000;
   top: -10px;
   left: 10px;
+  z-index: 2343;
   background-color: var(--white-color);
   padding-inline: 6px;
-  white-space: nowrap;
 }
 
-.rangeWrapper p:nth-of-type(2) {
-  padding: 12px 15px;
-  font-size: 16px;
-  border: 1px solid #e7e7e7;
-  padding: 11px 15px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-  font-size: 12px;
-  background-color: white;
+.example img:nth-of-type(1) {
+  margin-right: 25px;
 }
 
-.range {
-    position: absolute;
-    top: 40px;
-    left: -50px;
+.example img:nth-of-type(2) {
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #aaaaaa;
 }
