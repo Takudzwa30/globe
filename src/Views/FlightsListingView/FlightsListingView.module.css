@@ -7,14 +7,21 @@
 
 .wrapper {
   display: grid;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 340px 1px 1fr;
+  gap: 20px;
   padding-top: 50px;
+}
+
+.separator {
+  background: #112211;
+  opacity: 0.25;
+  width: 1px;
 }
 
 .search {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 43px;
+  height: 43px;
   background: var(--mint-green-color);
   color: var(--blackish-green-color);
   display: flex;
@@ -26,7 +33,7 @@
 }
 
 .searchIcon {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .search:hover {
@@ -35,4 +42,12 @@
   color: var(--mint-green-color);
   background: #fff;
   border: 1px var(--mint-green-color) solid;
+}
+
+.filters {
+  color: var(--blackish-green-color);
+}
+
+.filter h5 {
+  margin-bottom: 30px;
 }
