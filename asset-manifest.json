@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/globe/static/css/main.79d445d5.css",
-    "main.js": "/globe/static/js/main.d1c94d29.js",
+    "main.css": "/globe/static/css/main.614ea487.css",
+    "main.js": "/globe/static/js/main.9d1145e4.js",
     "static/js/787.0839f4e5.chunk.js": "/globe/static/js/787.0839f4e5.chunk.js",
     "static/media/homeHero.png": "/globe/static/media/homeHero.c39775a826ec767b0bbc.png",
     "static/media/flightsHeroBG.png": "/globe/static/media/flightsHeroBG.5a12421952b83646705f.png",
@@ -33,15 +33,17 @@
     "static/media/destinationTurkey.png": "/globe/static/media/destinationTurkey.e3a9296b973c7f5ffd97.png",
     "static/media/dubaiImage.png": "/globe/static/media/dubaiImage.05b36535c6b374c34b6f.png",
     "static/media/emiratesLogo.png": "/globe/static/media/emiratesLogo.4d028bc77c1731fd6291.png",
-    "static/media/logoLight.svg": "/globe/static/media/logoLight.49c3e0eed783f13aa7b9.svg",
-    "static/media/logoDark.svg": "/globe/static/media/logoDark.77b4b10184ba878d9e548f152792250b.svg",
+    "static/media/logoLight.svg": "/globe/static/media/logoLight.e29f3a607a13595091e5.svg",
+    "static/media/logoDark.svg": "/globe/static/media/logoDark.f7339fa3dcb4653037fe5d96984a3fb3.svg",
+    "static/media/calendar.svg": "/globe/static/media/calendar.90b5d9d5c9db700a03d405f495e22e4f.svg",
     "index.html": "/globe/index.html",
-    "main.79d445d5.css.map": "/globe/static/css/main.79d445d5.css.map",
-    "main.d1c94d29.js.map": "/globe/static/js/main.d1c94d29.js.map",
+    "static/media/downArrow.svg": "/globe/static/media/downArrow.bcad962f5e58a722401078c6b978a88b.svg",
+    "main.614ea487.css.map": "/globe/static/css/main.614ea487.css.map",
+    "main.9d1145e4.js.map": "/globe/static/js/main.9d1145e4.js.map",
     "787.0839f4e5.chunk.js.map": "/globe/static/js/787.0839f4e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79d445d5.css",
-    "static/js/main.d1c94d29.js"
+    "static/css/main.614ea487.css",
+    "static/js/main.9d1145e4.js"
   ]
 }
