@@ -24,10 +24,7 @@ const Search = ({ filterValue, home }) => {
     { content: cities, title: "From", placeholder: "Origin" },
     { content: cities, title: "To", placeholder: "Destination" },
     {
-      content: [
-        "Return",
-        "One Way",
-      ],
+      content: ["Return", "One Way"],
       title: "Trip",
       placeholder: "Trip",
     },
@@ -53,6 +50,9 @@ const Search = ({ filterValue, home }) => {
       placeholder: 1,
     },
   ];
+
+  const [dateRange, setDateRange] = useState([null, null]);
+  const [startDate, endDate] = dateRange;
 
   return (
     <Container>
@@ -97,7 +97,15 @@ const Search = ({ filterValue, home }) => {
                 return <SelectComponent key={index} {...item} />;
               })}
 
-              <DateRange label={"Depart - Return"} />
+              <DateRange
+                dateRange={dateRange}
+                startDate={startDate}
+                endDate={endDate}
+                setDateRange={setDateRange}
+                //  {...form.getInputProps("dateRange")}
+                placeHolder="Select dates"
+                label={"Depart - Return"}
+              />
             </div>
             <div className={Style.buttons}>
               <div className={Style.promoCodeField}>
@@ -118,7 +126,15 @@ const Search = ({ filterValue, home }) => {
                 return <SelectComponent key={index} {...item} />;
               })}
 
-              <DateRange label={"Check In - Check out"} />
+              <DateRange
+                dateRange={dateRange}
+                startDate={startDate}
+                endDate={endDate}
+                setDateRange={setDateRange}
+                //  {...form.getInputProps("dateRange")}
+                placeHolder="Select dates"
+                label={"Check In - Check out"}
+              />
             </div>
             <div className={Style.buttons}>
               <div className={Style.promoCodeField}>
