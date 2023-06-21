@@ -8,7 +8,7 @@
   position: absolute;
   top: -10px;
   left: 10px;
-  z-index: 2343;
+  z-index: 3;
   background-color: var(--white-color);
   padding-inline: 6px;
 }
