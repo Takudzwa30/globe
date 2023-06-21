@@ -15,7 +15,7 @@ import FlightDetailsView from "../Views/FlightDetailsView";
 
 const routes = {
   main: {
-    path: "/",
+    path: "/globe",
     element: <MainLayout />,
     title: "Main",
     routes: {

@@ -4,7 +4,7 @@ import LayoutRouter from "./Components/Router/LayoutRouter";
 import Loader from "./Components/Loader/Loader";
 
 // Libraries
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@hybris-software/ui-kit";
 
 // Data
@@ -58,7 +58,7 @@ function App() {
         },
       }}
     >
-      <HashRouter>
+      <BrowserRouter>
         <LayoutRouter
           loader={<Loader />}
           loadingTime={2000}
@@ -66,10 +66,10 @@ function App() {
         >
           <Routes>
             {routeComponents}
-            <Route path="*" element={<NotFoundView />} />
+            <Route path="/globe/*" element={<NotFoundView />} />
           </Routes>
         </LayoutRouter>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

@@ -7,6 +7,9 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import { Link } from "react-router-dom";
 import { Container } from "@hybris-software/ui-kit";
 
+// Routes
+import { paths } from "../../Routes/routes";
+
 // Utils
 import classNames from "@hybris-software/ui-kit/dist/Utils/classNames";
 
@@ -29,7 +32,7 @@ const Navbar = () => {
       <MobileMenu open={open} setOpen={setOpen} />
       <div className={Style.links}>
         <Link
-          to="/flights"
+          to={paths.main.flights}
           className={Style.flights}
           onClick={() => setActive(true)}
         >
@@ -37,7 +40,7 @@ const Navbar = () => {
           <p>Find Flight</p>
         </Link>
         <Link
-          to="/stays"
+          to={paths.main.stays}
           className={Style.hotels}
           onClick={() => setActive(false)}
         >
@@ -46,13 +49,13 @@ const Navbar = () => {
         </Link>
         <div
           style={{
-            display: window.location.pathname === "/" ? "none" : "block",
+            display: window.location.pathname === paths.main.home ? "none" : "block",
           }}
           className={active ? Style.selector : Style.selectorActive}
         ></div>
       </div>
 
-      <Link className={Style.logo} to={"/"}>
+      <Link className={Style.logo} to={paths.main.home}>
         <img src={Logo} alt="" />
       </Link>
 
