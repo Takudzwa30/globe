@@ -5,11 +5,13 @@ import CustomButton from "../../../../Components/CustomButton/CustomButton";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { useNavigate } from "react-router-dom";
 
 // Styles
 import Style from "./FlightandHotels.module.css";
 
 const FlightandHotels = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className={Style.flightGrid}>
@@ -23,7 +25,7 @@ const FlightandHotels = () => {
         <div className={Style.hotels}>
           <h1>Hotels</h1>
           <h6>Search hotels & Places Hire to our most popular destinations</h6>
-          <CustomButton icon to="/">
+          <CustomButton icon >
             Show Hotels
           </CustomButton>
         </div>

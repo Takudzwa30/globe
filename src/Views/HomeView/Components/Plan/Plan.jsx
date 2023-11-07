@@ -2,9 +2,13 @@ import React from "react";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { useNavigate } from "react-router-dom";
 
 // Components
 import CustomButton from "../../../../Components/CustomButton/CustomButton";
+
+// Routes
+import { paths } from "../../../../Routes/routes";
 
 // Images
 import turkey from "../../../../Assets/images/destinationTurkey.png";
@@ -61,6 +65,7 @@ const places = [
 ];
 
 const Plan = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className={Style.head}>
@@ -68,7 +73,9 @@ const Plan = () => {
           <h3>Plan your perfect trip</h3>
           <h6>Search Flights & Places Hire to our most popular destinations</h6>
         </div>
-        <CustomButton>See more places</CustomButton>
+        <CustomButton onClick={() => navigate(paths.main.stays)}>
+          See more places
+        </CustomButton>
       </div>
       <div className={Style.cards}>
         {places.map((place, index) => {
