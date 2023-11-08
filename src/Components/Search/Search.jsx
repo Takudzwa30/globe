@@ -2,10 +2,14 @@ import React, { useState } from "react";
 
 // Loibraries
 import { Container, InputField } from "@hybris-software/ui-kit";
+import { useNavigate } from "react-router-dom";
 
 // icons
 import { IoAirplane } from "react-icons/io5";
 import { IoIosBed } from "react-icons/io";
+
+// Paths
+import { paths } from "../../Routes/routes";
 
 // Components
 import SimpleSelect from "../../Components/SimpleSelect/SimpleSelect";
@@ -19,6 +23,7 @@ const Search = ({ filterValue, home }) => {
   const [searchFilter, setSearchFilter] = useState(filterValue);
   const cities = ["Dubai", "Sharjah", "Abu Dhabi"];
   const numbers = [1, 2, 3, 4, 5, 6];
+  const navigate = useNavigate();
 
   const flightsData = [
     { content: cities, title: "From", placeholder: "Origin" },
@@ -115,7 +120,9 @@ const Search = ({ filterValue, home }) => {
                 />
               </div>
 
-              <CustomButton icon>Show Flights</CustomButton>
+              <CustomButton onClick={() => navigate("flights-list")} icon>
+                Show Flights
+              </CustomButton>
             </div>
           </>
         )}
@@ -144,7 +151,9 @@ const Search = ({ filterValue, home }) => {
                 />
               </div>
 
-              <CustomButton icon>Show Places</CustomButton>
+              <CustomButton onClick={() => navigate("flights-list")} icon>
+                Show Places
+              </CustomButton>
             </div>
           </>
         )}
