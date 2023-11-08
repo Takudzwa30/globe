@@ -1,0 +1,41 @@
+.dropDownClosed {
+   height: 0;
+   overflow: hidden;
+   transition: height 0.4s ease;
+}
+
+.dropDown {
+   height: auto;
+   overflow: hidden;
+   transition: height 0.4s ease;
+}
+
+.link,
+.linkActive {
+   font-size: 0.895rem;
+   display: block;
+   padding-block: 10px;
+   padding-inline: 44px 10px;
+   margin: 10px;
+   position: relative;
+   color: var(--primary-black);
+}
+
+.linkActive,
+.link:hover {
+   color: #2196f3;
+}
+
+.firstDropDown,
+.secondDropDown {
+   position: absolute;
+   left: 22px;
+}
+
+.secondDropDown {
+   top: -35px;
+}
+
+.firstDropDown {
+   top: -5px;
+}
