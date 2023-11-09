@@ -1,0 +1,23 @@
+.breadCrumb {
+   display: flex;
+   gap: 10px;
+   margin-block: 50px 30px;
+   cursor: default;
+}
+
+.breadCrumb p:nth-of-type(2),
+.breadCrumb p:nth-of-type(1) {
+   color: #ff8682;
+}
+
+.breadCrumb p:nth-of-type(3) {
+   color: var(--blackish-green-color);
+   opacity: 0.75;
+}
+
+.detailsGrid {
+   display: grid;
+   grid-template-columns: 1fr 450px;
+   gap: 30px;
+}
+
