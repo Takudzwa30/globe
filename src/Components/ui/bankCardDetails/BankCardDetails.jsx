@@ -8,10 +8,10 @@ import SimpleCard from "../simpleCard/SimpleCard";
 
 // Icons
 import { FaCcVisa } from "react-icons/fa";
+import { IoIosAddCircleOutline } from "react-icons/io";
 
 // Styles
 import Style from "./BankCardDetails.module.css";
-import { IoIosAddCircleOutline } from "react-icons/io";
 
 const BankCardDetails = () => {
   const [inFull, setInFull] = useState(true);
