@@ -1,0 +1,53 @@
+.notSelected,
+.selected {
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.selected {
+  background: #8dd3bb;
+}
+
+.title {
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
+}
+
+.subTitle {
+  font-weight: 400;
+  line-height: normal;
+  max-width: 600px;
+}
+
+.tick {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected .tick {
+  border: 2px solid #fff;
+}
+
+.notSelected .tick {
+  border: 2px solid #112211;
+}
+
+.circle {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  border-radius: 50%;
+}
