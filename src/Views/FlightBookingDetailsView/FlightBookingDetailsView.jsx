@@ -27,7 +27,7 @@ const FlightBookingDetailsView = () => {
       </div>
       <div className={Style.detailsGrid}>
         <FlightCard version={true} />
-        <PriceBreakdown version="stay" />
+        <PriceBreakdown version="flight" />
         <Payment />
         <BankCardDetails />
       </div>
