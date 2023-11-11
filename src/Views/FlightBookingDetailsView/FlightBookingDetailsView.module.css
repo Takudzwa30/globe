@@ -1,23 +1,62 @@
 .breadCrumb {
-   display: flex;
-   gap: 10px;
-   margin-block: 50px 30px;
-   cursor: default;
+  display: flex;
+  gap: 10px;
+  margin-block: 50px 30px;
+  cursor: default;
 }
 
 .breadCrumb p:nth-of-type(2),
 .breadCrumb p:nth-of-type(1) {
-   color: #ff8682;
+  color: #ff8682;
 }
 
 .breadCrumb p:nth-of-type(3) {
-   color: var(--blackish-green-color);
-   opacity: 0.75;
+  color: var(--blackish-green-color);
+  opacity: 0.75;
 }
 
 .detailsGrid {
-   display: grid;
-   grid-template-columns: 1fr 450px;
-   gap: 30px;
+  display: grid;
+  grid-template-areas:
+    "one one two"
+    "three three two"
+    "four four two";
+  grid-template-columns: auto auto;
+  gap: 30px;
 }
 
+.detailsGrid > * {
+  height: fit-content;
+  min-width: 0;
+}
+
+.detailsGrid > *:nth-child(1) {
+  grid-area: one;
+  margin-bottom: 0;
+}
+
+.detailsGrid > *:nth-child(2) {
+  max-width: 450px;
+  grid-area: two;
+}
+
+.detailsGrid > *:nth-child(3) {
+  grid-area: three;
+}
+
+.detailsGrid > *:nth-child(4) {
+  grid-area: four;
+}
+
+@media screen and (max-width: 1200px) {
+  .detailsGrid {
+    grid-template-areas:
+      "one one one"
+      "two two two"
+      "three three three"
+      "four four four";
+  }
+  .detailsGrid > *:nth-child(2) {
+    max-width: unset;
+  }
+}
