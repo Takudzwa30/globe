@@ -13,6 +13,7 @@ import chevronForward from "../../Assets/images/chevronForward.png";
 
 // Styles
 import Style from "./FlightBookingDetailsView.module.css";
+import BankCardDetails from "../../Components/ui/bankCardDetails/BankCardDetails";
 
 const FlightBookingDetailsView = () => {
   return (
@@ -28,7 +29,7 @@ const FlightBookingDetailsView = () => {
         <FlightCard version={true} />
         <PriceBreakdown version="stay" />
         <Payment />
-        <Payment />
+        <BankCardDetails />
       </div>
     </Container>
   );

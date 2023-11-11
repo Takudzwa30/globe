@@ -13,7 +13,7 @@ const Payment = () => {
   return (
     <SimpleCard>
       <div
-        onClick={() => setInFull((prev) => !prev)}
+        onClick={() => setInFull(true)}
         className={inFull ? Style.selected : Style.notSelected}
       >
         <div>
@@ -28,7 +28,7 @@ const Payment = () => {
         style={{
           marginBottom: "0",
         }}
-        onClick={() => setInFull((prev) => !prev)}
+        onClick={() => setInFull(false)}
         className={!inFull ? Style.selected : Style.notSelected}
       >
         <div>
