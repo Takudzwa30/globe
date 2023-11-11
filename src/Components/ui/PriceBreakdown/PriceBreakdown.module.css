@@ -1,0 +1,94 @@
+.flightDetails {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.flightDetails > img {
+  border-radius: 12px;
+}
+
+.flightDetails h6 {
+  font-weight: 500;
+  line-height: normal;
+}
+
+.flightDetails h5 {
+  font-weight: 600;
+  line-height: normal;
+  margin-block: 5px 20px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rate {
+  color: var(--Blackish-Green, #121);
+  padding: 10px;
+  border: 1px solid var(--mint-green-color);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 4px;
+}
+
+.rating p {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.rating p span {
+  font-weight: 500;
+}
+
+.separator {
+  opacity: 0.25;
+  background: var(--blackish-green-color);
+  width: 100%;
+  height: 1px;
+}
+
+.protection {
+  font-weight: 500;
+  line-height: normal;
+  margin-block: 15px;
+}
+
+.protection span {
+  font-weight: 700;
+}
+
+.priceDetailsTitle {
+  margin-block: 15px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price > h6:nth-of-type(1) {
+  font-weight: 500;
+  line-height: normal;
+}
+
+.price > h6:nth-of-type(2) {
+  font-weight: 600;
+  line-height: normal;
+}
+
+@media screen and (max-width: 576px) {
+  .flightDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
