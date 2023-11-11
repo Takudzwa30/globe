@@ -1,4 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+
+// libraries
+import { MagicModal, Button } from "@hybris-software/ui-kit";
 
 // Components
 import SimpleCard from "../simpleCard/SimpleCard";
@@ -13,8 +16,32 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 const BankCardDetails = () => {
   const [inFull, setInFull] = useState(true);
 
+  const modalRef = useRef(null);
+
+  const openModal = () => {
+    modalRef.current.updateBody(
+      <>
+        <h2>Your Modal Content Goes Here</h2>
+        <p>This is a sample modal content.</p>
+      </>,
+      {
+        onCloseIconClick: () => {
+          document.documentElement.style.overflow = "unset";
+        },
+      }
+    );
+
+    document.documentElement.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    modalRef.current.hide();
+    document.documentElement.style.overflow = "hidden";
+  };
+
   return (
     <SimpleCard>
+      <MagicModal ref={modalRef} />
       <div
         onClick={() => setInFull((prev) => !prev)}
         className={inFull ? Style.selected : Style.notSelected}
@@ -29,7 +56,10 @@ const BankCardDetails = () => {
         </div>
       </div>
       <div className={Style.addNew}>
-        <IoIosAddCircleOutline className={Style.addIcon} />
+        <IoIosAddCircleOutline
+          onClick={() => openModal()}
+          className={Style.addIcon}
+        />
         <p>Add a new card</p>
       </div>
     </SimpleCard>
