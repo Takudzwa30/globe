@@ -66,6 +66,7 @@ body {
   background-color: var(--body-bg);
   font-style: normal;
   font-weight: 400px;
+  color: var(--blackish-green-color);
 }
 
 /* code {
