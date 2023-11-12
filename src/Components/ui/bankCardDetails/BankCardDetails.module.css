@@ -85,3 +85,24 @@
   font-weight: 500;
   opacity: 0.75;
 }
+
+.modalWrapper {
+  padding-block: 50px;
+}
+
+.modalWrapper h2 {
+  font-weight: 700;
+  margin-bottom: 3.125rem;
+}
+
+.inputsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.inputsGrid > :nth-child(1),
+.inputsGrid > :nth-child(5),
+.inputsGrid > :nth-child(4) {
+  grid-column: span 2;
+}

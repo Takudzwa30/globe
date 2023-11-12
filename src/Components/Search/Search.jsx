@@ -12,7 +12,7 @@ import { IoIosBed } from "react-icons/io";
 import { paths } from "../../Routes/routes";
 
 // Components
-import SimpleSelect from "../../Components/SimpleSelect/SimpleSelect";
+import SimpleSelect from "../SimpleSelect/SimpleSelect";
 import DateRange from "../../Components/DateRange/DateRange";
 import CustomButton from "../CustomButton/CustomButton";
 

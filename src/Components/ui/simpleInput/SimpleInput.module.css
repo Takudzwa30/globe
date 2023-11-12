@@ -1,0 +1,27 @@
+.simpleInputWithIcon,
+.simpleInput {
+  position: relative;
+}
+
+.simpleInput input,
+.simpleInputWithIcon input {
+  border: 1px solid #79747e;
+  padding: 11px 16px;
+  border-radius: 4px;
+}
+
+.simpleInputWithIcon input {
+  padding-right: 48px;
+}
+
+.simpleInput p,
+.simpleInputWithIcon p {
+  font-weight: 400;
+  font-size: 14px;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  z-index: 3;
+  background-color: var(--white-color);
+  padding-inline: 6px;
+}
