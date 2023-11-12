@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 
 // libraries
-import { MagicModal } from "@hybris-software/ui-kit";
+import { Button, MagicModal } from "@hybris-software/ui-kit";
 
 // Components
 import SimpleCard from "../simpleCard/SimpleCard";
@@ -14,9 +14,12 @@ import { IoIosAddCircleOutline } from "react-icons/io";
 // Styles
 import Style from "./BankCardDetails.module.css";
 import SimpleSelect from "../../SimpleSelect/SimpleSelect";
+import CustomButton from "../../CustomButton/CustomButton";
+import { useNavigate } from "react-router-dom";
 
 const BankCardDetails = () => {
   const [inFull, setInFull] = useState(true);
+  const navigate = useNavigate();
 
   const modalRef = useRef(null);
 
@@ -38,19 +41,18 @@ const BankCardDetails = () => {
   // TODO: check this formater function and impliment it in the form
   function formatString(inputString) {
     // Remove non-numeric characters and limit the string to 16 characters
-    const numericString = inputString.replace(/[^0-9]/g, '').slice(0, 16);
-  
+    const numericString = inputString.replace(/[^0-9]/g, "").slice(0, 16);
+
     // Insert a space after every 4 characters
-    const formattedString = numericString.replace(/(.{4})/g, '$1 ');
-  
+    const formattedString = numericString.replace(/(.{4})/g, "$1 ");
+
     return formattedString.trim(); // Trim any trailing space
   }
-  
+
   // Example usage:
   const input = "fsasdadas13232xsads12323dsa32";
   const result = formatString(input);
   console.log(result);
-  
 
   return (
     <SimpleCard>
@@ -75,6 +77,9 @@ const BankCardDetails = () => {
         />
         <p>Add a new card</p>
       </div>
+      <CustomButton onClick={() => navigate("/")} coloredReverse>
+        Make Payment
+      </CustomButton>
     </SimpleCard>
   );
 };
