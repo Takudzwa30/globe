@@ -145,6 +145,7 @@
 .buttonDisabled:hover {
   background-color: dimgrey;
   color: linen;
+  border: none;
 }
 
 @media screen and (max-width: 768px) {
