@@ -1,165 +1,153 @@
 .container {
-  padding-inline: 52px;
+   padding-inline: 52px;
 }
 
 /* Input Field  */
-
 .inputFieldStyle input,
 .inputFieldErrorStyle > input,
 .inputFieldSuccessStyle input {
-  border-radius: 10px;
-  background-color: white;
+   border-radius: 10px;
+   background-color: white;
+}
+
+.inputFieldSuccessStyle input {
+   border: 1px solid var(--mint-green-color);
+}
+
+.inputFieldStyle input {
+   border: 1px solid #79747e;
+}
+
+.inputFieldErrorStyle input {
+   border: 1px solid red;
 }
 
 .buttonStyle {
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid transparent;
-  transition: all 0.2s;
-  background-color: var(--blackish-green-color);
-  color: #ffff;
-  font-weight: 500;
-  font-size: 14px;
+   padding: 10px;
+   border-radius: 5px;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid transparent;
+   transition: all 0.2s;
+   background-color: var(--blackish-green-color);
+   color: #ffff;
+   font-weight: 500;
+   font-size: 14px;
 }
 
 .buttonStyle:hover {
-  background-color: var(--white-color);
-  color: var(--blackish-green-color);
-  border: 1px solid var(--blackish-green-color);
+   background-color: var(--white-color);
+   color: var(--blackish-green-color);
+   border: 1px solid var(--blackish-green-color);
 }
 
 /* ------------ Primary Button ------------- */
 .buttonStyle {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  min-width: 100px;
-  height: 50px;
-  border-radius: 8px;
-  font-weight: 600;
-  background-color: var(--white-color);
-  border: 1px solid var(--mint-green-color);
-  transition: all 0.2s ease;
-  user-select: none;
-  color: var(--blackish-green-color);
-  overflow: hidden;
-  box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   justify-content: center;
+   min-width: 100px;
+   height: 50px;
+   border-radius: 8px;
+   font-weight: 600;
+   background-color: var(--white-color);
+   border: 1px solid var(--mint-green-color);
+   transition: all 0.2s ease;
+   user-select: none;
+   color: var(--blackish-green-color);
+   overflow: hidden;
+   box-shadow: 0px 4px 60px rgba(0, 0, 0, 0.08);
 }
-/* .buttonStyle > a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  padding: 20px;
-  font-size: 16px;
-  color: var(--light-blue);
-  text-transform: capitalize;
-  font-weight: 600;
-  transition: all 0.2s ease;
-} */
+
 .buttonStyle > a > svg {
-  width: 20px;
-  height: 20px;
+   width: 20px;
+   height: 20px;
 }
 .buttonStyle:hover {
-  border: unset;
-  background-color: var(--mint-green-color);
+   border: unset;
+   background-color: var(--mint-green-color);
 }
 .buttonStyle:hover > a {
-  color: var(--white-color);
+   color: var(--white-color);
 }
-.buttonStyle:active {
-  /* scale: 1.05; */
-}
+
 /* ------------ Secondary Button ------------- */
 .iconBtn {
-  background-color: var(--mint-green-color);
-  border: unset;
-  color: var(--blackish-green-color);
+   background-color: var(--mint-green-color);
+   border: unset;
+   color: var(--blackish-green-color);
 }
 .iconBtn svg {
-  transition: all 0.1s ease;
+   transition: all 0.1s ease;
 }
 .iconBtn:hover {
-  color: var(--mint-green-color);
-  background-color: var(--white-color);
-  border: 1px var(--mint-green-color);
+   color: var(--mint-green-color);
+   background-color: var(--white-color);
+   border: 1px var(--mint-green-color);
 }
 .iconBtn:hover > a {
-  color: var(--mint-green-color);
+   color: var(--mint-green-color);
 }
 .iconBtn:hover svg {
-  color: var(--mint-green-color);
+   color: var(--mint-green-color);
 }
 /* ------------ Borderless Button ------------- */
 .borderBtn {
-  border: unset;
+   border: unset;
 }
 /* ----------- Colored Button ------------ */
 .coloredBtn {
-  background-color: var(--blackish-green-color);
-  text-transform: capitalize;
-  border: 1px solid var(--blackish-green-color);
-  font-weight: 600;
+   background-color: var(--blackish-green-color);
+   text-transform: capitalize;
+   border: 1px solid var(--blackish-green-color);
+   font-weight: 600;
 }
 .coloredBtn {
-  color: var(--white-color);
+   color: var(--white-color);
 }
 .coloredBtn:hover {
-  background-color: var(--white-color);
-  border: 1px solid var(--blackish-green-color);
+   background-color: var(--white-color);
+   border: 1px solid var(--blackish-green-color);
 }
 .coloredBtn:hover > a {
-  color: var(--light-blue);
+   color: var(--light-blue);
 }
 
 /* Reverse BTN  */
 
 .coloredReverseBtn {
-  background-color: var(--mint-green-color);
-  text-transform: capitalize;
-  font-weight: 600;
-  color: var(--blackish-green-color);
+   background-color: var(--mint-green-color);
+   text-transform: capitalize;
+   font-weight: 600;
+   color: var(--blackish-green-color);
 }
 
 .coloredReverseBtn:hover {
-  background-color: var(--white-color);
-  border: 1px solid var(--mint-green-color);
-  color: var(--mint-green-color);
+   background-color: var(--white-color);
+   border: 1px solid var(--mint-green-color);
+   color: var(--mint-green-color);
 }
 
 .coloredReverseBtn:hover > a {
-  color: red;
+   color: red;
 }
 
 /* ------- Disabled Button ------- */
-.buttonStyleDisabled {
-  background-color: var(--disabled-btn-color);
-  border: unset;
+.buttonDisabled {
+   background-color: dimgrey;
+   color: linen;
 }
-.buttonStyleDisabled > a {
-  cursor: not-allowed;
-  background-color: var(--disabled-btn-color);
-  color: var(--disabled-btn-text-color);
-}
-.buttonStyleDisabled:hover {
-  background-color: var(--disabled-btn-color);
-}
-.buttonStyleDisabled:hover > a {
-  background-color: var(--disabled-btn-color);
-  color: var(--disabled-btn-text-color);
-}
-.buttonStyleDisabled:active {
-  scale: 1;
+
+.buttonDisabled:hover {
+   background-color: dimgrey;
+   color: linen;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding-inline: 15px;
-  }
+   .container {
+      padding-inline: 15px;
+   }
 }

@@ -8,9 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { IoAirplane } from "react-icons/io5";
 import { IoIosBed } from "react-icons/io";
 
-// Paths
-import { paths } from "../../Routes/routes";
-
 // Components
 import SimpleSelect from "../SimpleSelect/SimpleSelect";
 import DateRange from "../../Components/DateRange/DateRange";
@@ -120,7 +117,7 @@ const Search = ({ filterValue, home }) => {
                 />
               </div>
 
-              <CustomButton onClick={() => navigate("flights-list")} icon>
+              <CustomButton onClick={() => navigate("/globe/flights-list")} icon>
                 Show Flights
               </CustomButton>
             </div>
@@ -151,7 +148,7 @@ const Search = ({ filterValue, home }) => {
                 />
               </div>
 
-              <CustomButton onClick={() => navigate("flights-list")} icon>
+              <CustomButton onClick={() => navigate("/globe/flights-list")} icon>
                 Show Places
               </CustomButton>
             </div>

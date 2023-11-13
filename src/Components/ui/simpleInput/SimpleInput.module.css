@@ -5,7 +5,6 @@
 
 .simpleInput input,
 .simpleInputWithIcon input {
-  border: 1px solid #79747e;
   padding: 11px 16px;
   border-radius: 4px;
 }

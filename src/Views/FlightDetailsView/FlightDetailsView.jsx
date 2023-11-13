@@ -2,10 +2,14 @@ import React, { useState } from "react";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { useNavigate } from "react-router-dom";
 
 // Components
 import CustomButton from "../../Components/CustomButton/CustomButton";
 import FlightCard from "../../Components/ui/FlightCard/FlightCard";
+
+// Paths
+import { paths } from "../../Routes/routes";
 
 // Images
 import pilotCabin from "../../Assets/images/pilotCabin.png";
@@ -47,6 +51,8 @@ const images = [
 ];
 
 const FlightDetailsView = () => {
+   // Hooks
+   const navigate = useNavigate();
    const [selectedClass, setSelectedClass] = useState("Economy");
    return (
       <Container>
@@ -87,6 +93,7 @@ const FlightDetailsView = () => {
                         paddingInline: "40px",
                      }}
                      coloredReverse
+                     onClick={() => navigate(paths.main.flightBookingDetails)}
                   >
                      Book now
                   </CustomButton>
