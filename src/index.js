@@ -5,11 +5,22 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+import { generateApiClient, ApiProvider } from "@hybris-software/use-query";
+
+const apiClient = generateApiClient({
+   baseUrl: "",
+   authorizationHeader: "Authorization",
+   authorizationPrefix: "Token ",
+   acceptLanguage: localStorage.getItem("language") || "EN",
+});
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+   <React.StrictMode>
+      <ApiProvider apiClient={apiClient}>
+         <App />
+      </ApiProvider>
+   </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
