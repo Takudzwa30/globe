@@ -57,6 +57,8 @@ const payments = [
 const ReceiptDetailsView = () => {
    // Hooks
    const location = useLocation();
+
+   // Variables
    const flight = location?.state?.flight;
    console.log(flight);
    return (
