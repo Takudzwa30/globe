@@ -98,7 +98,11 @@ const BankCardDetails = () => {
                   {
                      onCloseIconClick: () => {
                         document.documentElement.style.overflow = "unset";
-                        navigate(paths.main.receiptDetails);
+                        navigate(paths.main.receiptDetails, {
+                           state: {
+                              flight: true,
+                           },
+                        });
                      },
                   }
                );
@@ -236,7 +240,11 @@ const PaymentSuccessModal = ({ closeModal }) => {
          <CustomButton
             coloredReverse
             onClick={() => {
-               navigate(paths.main.receiptDetails);
+               navigate(paths.main.receiptDetails, {
+                  state: {
+                     flight: true,
+                  },
+               });
                closeModal();
             }}
          >

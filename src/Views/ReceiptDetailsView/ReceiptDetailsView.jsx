@@ -2,13 +2,14 @@ import React from "react";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { useLocation } from "react-router-dom";
 
 // Components
 import CustomButton from "../../Components/CustomButton/CustomButton";
 
 // Icons
 import chevronForward from "../../Assets/images/chevronForward.png";
-import location from "../../Assets/images/location.png";
+import locationImage from "../../Assets/images/location.png";
 import share from "../../Assets/images/share.png";
 import downArrowVector from "../../Assets/images/downArrowVector.png";
 import planeSmallIcon from "../../Assets/images/planeSmallIcon.png";
@@ -54,6 +55,10 @@ const payments = [
 ];
 
 const ReceiptDetailsView = () => {
+   // Hooks
+   const location = useLocation();
+   const flight = location?.state?.flight;
+   console.log(flight);
    return (
       <Container>
          <div className={Style.breadCrumb}>
@@ -67,16 +72,9 @@ const ReceiptDetailsView = () => {
             <div className={Style.detailsLeft}>
                <h4>Emirates A380 Airbus</h4>
                <p>
-                  <img src={location} alt="location" />
+                  <img src={locationImage} alt="location" />
                   Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437
                </p>
-               <div className={Style.reviews}>
-                  <div className={Style.rating}>4.2</div>
-                  <p>
-                     {" "}
-                     <span>Very Good</span> 54 reviews
-                  </p>
-               </div>
             </div>
             <div className={Style.detailsRight}>
                <h3>$240</h3>
