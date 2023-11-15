@@ -1,0 +1,384 @@
+.breadCrumb {
+   display: flex;
+   gap: 10px;
+   margin-block: 50px 30px;
+   cursor: default;
+}
+
+.breadCrumb p:nth-of-type(2),
+.breadCrumb p:nth-of-type(1) {
+   color: #ff8682;
+}
+
+.breadCrumb p:nth-of-type(3) {
+   color: var(--blackish-green-color);
+   opacity: 0.75;
+}
+
+.detailsLeft > p {
+   display: flex;
+   gap: 5px;
+   margin-block: 15px 10px;
+}
+
+.flightDetails {
+   display: flex;
+   justify-content: space-between;
+}
+
+.reviews {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.reviews p {
+   display: flex;
+   align-items: center;
+   gap: 5px;
+}
+
+.reviews p span {
+   font-weight: 700;
+}
+
+.favorite,
+.rating,
+.share {
+   border: 1px solid var(--mint-green-color);
+   border-radius: 4px;
+}
+
+.rating {
+   width: 40px;
+   height: 32px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 12px;
+   color: var(--blackish-green-color);
+}
+
+.detailsRight h3 {
+   color: #ff8682;
+   margin-bottom: 15px;
+   text-align: right;
+}
+
+.buttonsWrapper {
+   display: flex;
+   justify-content: flex-end;
+   gap: 15px;
+}
+
+.favorite,
+.share {
+   width: 48px;
+   height: 48px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+
+.heart {
+   font-size: 20px;
+}
+
+.ticketWrapper {
+   display: grid;
+   grid-template-columns: 200px 1fr 375px;
+   margin-block: 40px;
+}
+
+.timing {
+   padding: 25px;
+   background: #ebf6f2;
+   border-bottom-left-radius: 16px;
+   border-top-left-radius: 16px;
+   text-align: center;
+}
+
+.time h3 {
+   font-weight: 600;
+   line-height: normal;
+}
+
+.time p {
+   font-size: 12px;
+   font-weight: 500;
+   line-height: normal;
+   opacity: 0.6;
+   margin-top: 5px;
+}
+
+.flightImages {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin-block: 15px;
+}
+
+.flightImages > img:nth-of-type(odd) {
+   width: 26px;
+   height: 36px;
+}
+
+.flightImages > img:nth-of-type(even) {
+   width: 24px;
+   height: 24px;
+}
+
+.flightImages > img:nth-of-type(3) {
+   transform: rotate(180deg);
+}
+
+.ticket {
+   border: 1px solid #eaeaea;
+   border-bottom-right-radius: 16px;
+   border-top-right-radius: 16px;
+}
+
+.ticketTop {
+   border-top-right-radius: 16px;
+   padding: 24px;
+   background: var(--Mint-Green, #8dd3bb);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.userDetails {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.userDetails > img {
+   width: 48px;
+   height: 48px;
+   border-radius: 50%;
+}
+
+.userDetails h5 {
+   font-weight: 700;
+   line-height: normal;
+}
+
+.userDetails p {
+   font-weight: 400;
+   line-height: normal;
+}
+
+.class {
+   font-weight: 700;
+   line-height: normal;
+}
+
+.ticketInfoWrapper {
+   padding: 25px;
+   display: flex;
+   flex-direction: column;
+   gap: 60px;
+}
+
+.pointsGrid {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   gap: 20px 10px;
+}
+
+.bottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.flightCode h3 {
+   font-weight: 600;
+   line-height: normal;
+}
+
+.flightCode p {
+   font-size: 12px;
+   font-weight: 500;
+   line-height: normal;
+   opacity: 0.6;
+}
+
+.routeImage {
+   border-radius: 16px;
+   border: 1px solid #eaeaea;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.point {
+   display: flex;
+   gap: 8px;
+   align-items: center;
+}
+
+.point > img {
+   width: 32px;
+   height: 32px;
+   border-radius: 4px;
+}
+
+.pointTitle {
+   font-size: 14px;
+   font-weight: 600;
+   line-height: normal;
+   opacity: 0.6;
+}
+
+.pointSubTitle {
+   font-size: 12px;
+   font-weight: 500;
+   line-height: normal;
+}
+
+.termsTitle {
+   margin-top: 70px;
+}
+
+.paymentsWrapper h5 {
+   margin-block: 30px 15px;
+}
+
+.payment {
+   display: flex;
+   align-items: baseline;
+   margin-bottom: 15px;
+}
+
+.payment svg {
+   flex-shrink: 0;
+}
+
+.payment h6 {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.contact h5 {
+   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+   .ticketWrapper div {
+      border-radius: unset;
+   }
+
+   .ticketWrapper {
+      grid-template-areas:
+         "one one one"
+         "two two three";
+      grid-template-columns: auto auto 375px;
+   }
+
+   .timing {
+      grid-area: one;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+   }
+
+   .ticket {
+      grid-area: two;
+   }
+
+   .ticketTop {
+      border-top-right-radius: unset;
+      border-bottom-right-radius: unset;
+   }
+
+   .routeImage {
+      grid-area: three;
+   }
+   .pointsGrid {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .ticketInfoWrapper {
+      gap: 20px;
+   }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1200px) {
+   .timing {
+      display: flex;
+      justify-content: space-between;
+   }
+   .flightImages {
+      flex-direction: row;
+      gap: 40px;
+   }
+
+   .flightImages > img {
+      rotate: 270deg;
+   }
+}
+
+@media screen and (max-width: 991px) {
+   .ticketWrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas: unset;
+   }
+   .ticketWrapper > div {
+      grid-area: unset;
+      border-radius: unset;
+   }
+}
+
+@media screen and (max-width: 768px) {
+   .flightDetails {
+      flex-direction: column;
+   }
+   .detailsRight {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+   }
+   .detailsRight h3 {
+      margin: unset;
+   }
+   .buttonsWrapper {
+      justify-content: flex-start;
+   }
+   .detailsRight h3 {
+      text-align: left;
+   }
+}
+
+@media screen and (max-width: 576px) {
+   .detailsRight {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+   }
+
+   .ticketTop {
+      flex-direction: column;
+      gap: 30px;
+      align-items: flex-start;
+   }
+
+   .pointsGrid {
+      grid-template-columns: 1fr;
+      margin-block: 15px;
+   }
+
+   .bottom {
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .routeImage img {
+      width: 100%;
+   }
+}
