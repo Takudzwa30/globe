@@ -1,0 +1,33 @@
+/** Range **/
+.totalBar{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+
+}
+.selected{
+    position: absolute;
+    width: 60%;
+    background-color: orangered;
+    height: 2px;
+}
+.leftRangePoint, .rightRangePoint{
+    position: absolute;
+    cursor: pointer;
+    background-color: orangered;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    bottom: -6px;
+}
+.leftPointLabel, .rightPointLabel{
+    position: absolute;
+    bottom: 5px;
+}
+.rangeBar{
+    position: absolute;
+    height: 3px;
+    background-color: orangered;
+}
+/****/
