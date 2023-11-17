@@ -8,27 +8,29 @@ import Places from "./Components/Places/Places";
 
 // Styles
 import Style from "./FlightsView.module.css";
+import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
 
 const FlightsView = () => {
-  return (
-    <>
-      <section>
-        <HeroSection />
-      </section>
+   return (
+      <>
+         <InputRangeSlider />
+         <section>
+            <HeroSection />
+         </section>
 
-      <section className={Style.search}>
-        <Search filterValue="flights" />
-      </section>
+         <section className={Style.search}>
+            <Search filterValue="flights" />
+         </section>
 
-      <section>
-        <Map />
-      </section>
+         <section>
+            <Map />
+         </section>
 
-      <section className={Style.places}>
-        <Places />
-      </section>
-    </>
-  );
+         <section className={Style.places}>
+            <Places />
+         </section>
+      </>
+   );
 };
 
 export default FlightsView;
