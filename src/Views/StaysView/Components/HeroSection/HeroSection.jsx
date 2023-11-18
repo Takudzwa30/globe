@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // Libraires
 import { Container } from "@hybris-software/ui-kit";

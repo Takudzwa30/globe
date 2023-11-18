@@ -5,7 +5,6 @@ import { Container } from "@hybris-software/ui-kit";
 import SimpleSelect from "../../Components/SimpleSelect/SimpleSelect";
 import DateRange from "../../Components/DateRange/DateRange";
 import useForm from "@hybris-software/use-ful-form";
-import DatePicker from "react-datepicker";
 
 // Icons
 import { FiSearch } from "react-icons/fi";

@@ -167,7 +167,7 @@ const ReceiptDetailsView = () => {
 const Point = ({ image, title, subTitle }) => {
    return (
       <div className={Style.point}>
-         <img src={image} alt="Point Image" />
+         <img src={image} alt="Point" />
          <div>
             <p className={Style.pointTitle}>{title}</p>
             <p className={Style.pointSubTitle}>{subTitle}</p>

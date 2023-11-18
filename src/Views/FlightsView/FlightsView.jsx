@@ -8,7 +8,7 @@ import Places from "./Components/Places/Places";
 
 // Styles
 import Style from "./FlightsView.module.css";
-import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
+// import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
 
 const FlightsView = () => {
    return (
