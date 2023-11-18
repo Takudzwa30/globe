@@ -58,8 +58,8 @@ const routes = {
             element: <StaysView />,
             title: "Stays",
          },
-         hotelsList: {
-            path: "/hotels-list",
+         staysList: {
+            path: "/stays-list",
             element: <StaysListingView />,
             title: "Hotels List",
          },
