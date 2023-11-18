@@ -13,7 +13,7 @@ import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSli
 const FlightsView = () => {
    return (
       <>
-         <InputRangeSlider />
+         {/* <InputRangeSlider /> */}
          <section>
             <HeroSection />
          </section>
