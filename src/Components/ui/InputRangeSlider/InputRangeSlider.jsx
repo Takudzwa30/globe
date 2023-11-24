@@ -200,9 +200,27 @@ const InputRangeSlider = ({
     }));
   };
 
+  // Click event handler for moving the range points to the clicked position
+  const handleBarClick = (e) => {
+    // Variables
+    const clickedPosition =
+      e.clientX - totalBarRef.current.getBoundingClientRect().left;
+    const minPosition = clickedPosition - rangePositionRef.current.min;
+    const maxPosition = clickedPosition - rangePositionRef.current.max;
+
+    setCurrentValue({
+      min: (minPosition * (max - min)) / componentWidth,
+      max: (maxPosition * (max - min)) / componentWidth,
+    });
+  };
+
   return (
-    <div style={{ overflow: "hidden", padding: "20px" }}>
-      <div className={mainBarClassName} ref={totalBarRef}>
+    <div style={{ overflow: "hidden", padding: "30px 20px" }}>
+      <div
+        className={mainBarClassName}
+        ref={totalBarRef}
+        onClick={handleBarClick}
+      >
         <div
           onMouseDown={onMouseDownMin}
           onTouchStart={onTouchStartMin}
@@ -225,7 +243,7 @@ const InputRangeSlider = ({
           className={rightPointLabelClassName}
           style={{ left: rangePosition.max, bottom: "-30px" }}
         >
-          {currentValue.max.toFixed(2)}
+          {Math.round(currentValue.max)}
         </div>
         <div
           className={rangeBarClassName}
