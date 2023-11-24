@@ -11,7 +11,7 @@ import Style from "./InputRangeSlider.module.css";
  * @returns
  */
 const InputRangeSlider = ({
-  min = 60,
+  min = 0,
   max = 200,
   mainBarClassName = Style.totalBar,
   leftRangePointClassName = Style.leftRangePoint,
@@ -213,7 +213,7 @@ const InputRangeSlider = ({
           className={leftPointLabelClassName}
           style={{ left: rangePosition.min }}
         >
-          {currentValue.min.toFixed(2)}
+          {Math.round(currentValue.min)}
         </div>
         <div
           onMouseDown={onMouseDownMax}
