@@ -16,7 +16,7 @@ import classNames from "@hybris-software/ui-kit/dist/Utils/classNames";
 // icons
 import { IoAirplane } from "react-icons/io5";
 import { IoIosBed } from "react-icons/io";
-import { FaRegUserCircle } from "react-icons/fa";
+// import { FaRegUserCircle } from "react-icons/fa";
 
 // logo
 import Logo from "../../Assets/logos/logoDark.svg";

@@ -2,8 +2,6 @@ import React from "react";
 
 // Libraries
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
 
 // Utilities
 import classNames from "../../utils/classNames";
@@ -18,7 +16,6 @@ import { Button } from "@hybris-software/ui-kit";
 import Theme from "../../Assets/css/Theme.module.css";
 
 const CustomButton = ({ children, baseClassName, to, ...props }) => (
-  // const navigate = useNavigate();
   <Button
     className={classNames(
       baseClassName,
@@ -28,12 +25,9 @@ const CustomButton = ({ children, baseClassName, to, ...props }) => (
       props.icon && Theme.iconBtn
     )}
     {...props}
-    // onClick={() => navigate(to)}
   >
-    {/* <Link className={props.linkClassName} to={to ? to : "#"}> */}
     {props.icon && <BsSendFill />}
     {children}
-    {/* </Link> */}
   </Button>
 );
 

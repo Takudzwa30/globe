@@ -1,7 +1,7 @@
 import React from "react";
 
 // Libraries
-import { Button, Container, InputField } from "@hybris-software/ui-kit";
+import { Container, InputField } from "@hybris-software/ui-kit";
 import useForm from "@hybris-software/use-ful-form";
 // import useQuery from "@hybris-software/use-query";
 import CustomButton from "../CustomButton/CustomButton";

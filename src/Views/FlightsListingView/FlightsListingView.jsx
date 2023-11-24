@@ -14,7 +14,7 @@ import Card from "./Components/Card/Card";
 
 // Stytles
 import Style from "./FlightsListingView.module.css";
-import DropDown from "../../Components/ui/DropDown/DropDown";
+// import DropDown from "../../Components/ui/DropDown/DropDown";
 
 const cities = ["Dubai", "Sharjah", "Abu Dhabi"];
 const numbers = [1, 2, 3, 4, 5, 6];
@@ -87,10 +87,10 @@ const FlightsListingView = () => {
          <div className={Style.wrapper}>
             <div className={Style.filters}>
                <h5>Filters</h5>
-               <DropDown length={2} title={"Price"}>
+               {/* <DropDown length={2} title={"Price"}>
                   <h5>$4500</h5>
                   <h5>$4500</h5>
-               </DropDown>
+               </DropDown> */}
             </div>
             <div className={Style.separator} />
             <Card />

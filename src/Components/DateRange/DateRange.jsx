@@ -1,4 +1,4 @@
-import React, { useState, forwardRef } from "react";
+import React, { forwardRef } from "react";
 
 // Libraries
 import DatePicker from "react-datepicker";
@@ -6,7 +6,6 @@ import moment from "moment";
 
 // Icons
 import calendar from "../../Assets/icons/calendar.svg";
-import downArrow from "../../Assets/icons/downArrow.svg";
 
 // Styles
 import Style from "./DateRange.module.css";

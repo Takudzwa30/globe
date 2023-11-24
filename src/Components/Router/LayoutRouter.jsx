@@ -31,7 +31,7 @@ const LayoutRouter = ({
       document.body.style.overflow = "unset";
       setIsLoading(false);
     };
-  }, [useLocation()]);
+  }, [clientTitle, loadingTime, pathname]);
 
   return (
     <>

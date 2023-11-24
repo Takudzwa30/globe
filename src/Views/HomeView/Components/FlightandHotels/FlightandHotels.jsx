@@ -5,13 +5,11 @@ import CustomButton from "../../../../Components/CustomButton/CustomButton";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
-import { useNavigate } from "react-router-dom";
 
 // Styles
 import Style from "./FlightandHotels.module.css";
 
 const FlightandHotels = () => {
-  const navigate = useNavigate();
   return (
     <Container>
       <div className={Style.flightGrid}>
