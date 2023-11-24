@@ -149,6 +149,20 @@ const InputRangeSlider = ({
     }));
   }
 
+    // Click event handler for moving the range points to the clicked position
+    const handleBarClick = (e) => {
+      // Variables
+      const clickedPosition =
+        e.clientX - totalBarRef.current.getBoundingClientRect().left;
+      const minPosition = clickedPosition - rangePositionRef.current.min;
+      const maxPosition = clickedPosition - rangePositionRef.current.max;
+  
+      setCurrentValue({
+        min: (minPosition * (max - min)) / componentWidth,
+        max: (maxPosition * (max - min)) / componentWidth,
+      });
+    };
+
   //Listeners
   const onMouseMove = (e) => {
     if (mouseDownRef.current.min) bulletPos("min", e.screenX);
@@ -200,19 +214,7 @@ const InputRangeSlider = ({
     }));
   };
 
-  // Click event handler for moving the range points to the clicked position
-  const handleBarClick = (e) => {
-    // Variables
-    const clickedPosition =
-      e.clientX - totalBarRef.current.getBoundingClientRect().left;
-    const minPosition = clickedPosition - rangePositionRef.current.min;
-    const maxPosition = clickedPosition - rangePositionRef.current.max;
 
-    setCurrentValue({
-      min: (minPosition * (max - min)) / componentWidth,
-      max: (maxPosition * (max - min)) / componentWidth,
-    });
-  };
 
   return (
     <div style={{ overflow: "hidden", padding: "30px 20px" }}>
