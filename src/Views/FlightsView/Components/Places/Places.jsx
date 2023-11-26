@@ -2,9 +2,13 @@ import React from "react";
 
 // Libraries
 import { Container } from "@hybris-software/ui-kit";
+import { useNavigate } from "react-router-dom";
 
 // Components
 import CustomButton from "../../../../Components/CustomButton/CustomButton";
+
+// Paths
+import { paths } from "../../../../Routes/routes";
 
 // Images
 import melbourne from "../../../../Assets/images/melbourneBG.png";
@@ -48,6 +52,7 @@ const places = [
 ];
 
 const Places = () => {
+  const navigate = useNavigate();
   return (
     <Container>
       <div className={Style.head}>
@@ -59,7 +64,9 @@ const Places = () => {
             destination.
           </h6>
         </div>
-        <CustomButton>See All</CustomButton>
+        <CustomButton onClick={() => navigate(paths.main.flightsList)}>
+          See All
+        </CustomButton>
       </div>
       <div className={Style.cards}>
         {places.map((place, index) => {
@@ -76,7 +83,9 @@ const Places = () => {
             destination.
           </h6>
         </div>
-        <CustomButton>See All</CustomButton>
+        <CustomButton onClick={() => navigate(paths.main.flightsList)}>
+          See All
+        </CustomButton>
       </div>
       <div className={Style.packing}>
         <div className={Style.left}>
@@ -96,7 +105,9 @@ const Places = () => {
             experience life in different ways. We explore new places, cultures,
             cuisines, traditions, and ways of living.
           </p>
-          <CustomButton>Book Flight</CustomButton>
+          <CustomButton onClick={() => navigate(paths.main.flightDetails)}>
+            Book Flight
+          </CustomButton>
         </div>
         <div className={Style.right}>
           <div
@@ -130,6 +141,7 @@ const Places = () => {
 };
 
 const Card = ({ bg, city, subTitle, price }) => {
+  const navigate = useNavigate();
   return (
     <div
       style={{
@@ -146,7 +158,12 @@ const Card = ({ bg, city, subTitle, price }) => {
           <h4>$ {price}</h4>
         </div>
       </div>
-      <CustomButton coloredReverse>Book Flight</CustomButton>
+      <CustomButton
+        coloredReverse
+        onClick={() => navigate(paths.main.flightDetails)}
+      >
+        Book Flight
+      </CustomButton>
     </div>
   );
 };

@@ -80,6 +80,9 @@ const Search = ({ filterValue, home }) => {
             </div>
             <div
               onClick={() => setSearchFilter("stays")}
+              style={{
+                pointerEvents: "none",
+              }}
               className={Style.hotels}
             >
               <IoIosBed />
