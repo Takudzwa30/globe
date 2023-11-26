@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/globe/static/css/main.02c91f73.css",
-    "main.js": "/globe/static/js/main.d4388378.js",
+    "main.css": "/globe/static/css/main.9d4ea601.css",
+    "main.js": "/globe/static/js/main.cfbc2543.js",
     "static/js/787.0839f4e5.chunk.js": "/globe/static/js/787.0839f4e5.chunk.js",
     "static/media/homeHero.png": "/globe/static/media/homeHero.c39775a826ec767b0bbc.png",
+    "static/media/staysHeroBG.png": "/globe/static/media/staysHeroBG.8b2a798f1a85fd26ef7d.png",
     "static/media/flightsHeroBG.png": "/globe/static/media/flightsHeroBG.5a12421952b83646705f.png",
     "static/media/hotelsBG.png": "/globe/static/media/hotelsBG.65e45fbcafb3e997cf9c.png",
     "static/media/bigPlane.png": "/globe/static/media/bigPlane.df7357fc1e2175290011.png",
@@ -20,9 +21,12 @@
     "static/media/iceViews.png": "/globe/static/media/iceViews.094cdafd504c5eab99fb.png",
     "static/media/northernLights.png": "/globe/static/media/northernLights.c664c717cb19f3769a42.png",
     "static/media/map.png": "/globe/static/media/map.5a8968d25fc592d3cc70.png",
+    "static/media/routeOfFlight.png": "/globe/static/media/routeOfFlight.e30010cdd47e032e7c59.png",
     "static/media/pilotCabin.png": "/globe/static/media/pilotCabin.36bd2d91cb6a1b4d18a9.png",
+    "static/media/hotelViewOutside.png": "/globe/static/media/hotelViewOutside.8118311ed0e26116467c.png",
     "static/media/flightSeats.png": "/globe/static/media/flightSeats.3ac8904d81cebc2fb618.png",
     "static/media/familyTogether.png": "/globe/static/media/familyTogether.ebcf714152faa2596bbb.png",
+    "static/media/smallEmiratesPlane.png": "/globe/static/media/smallEmiratesPlane.684fac963ad0b3e73121.png",
     "static/media/maleImage.png": "/globe/static/media/maleImage.bb9909ed2b92c54bd9ae.png",
     "static/media/tokyoImage.png": "/globe/static/media/tokyoImage.3fb26c72437727841c9f.png",
     "static/media/NYImage.png": "/globe/static/media/NYImage.287fbc3fb9c48b820c6d.png",
@@ -33,17 +37,16 @@
     "static/media/destinationTurkey.png": "/globe/static/media/destinationTurkey.e3a9296b973c7f5ffd97.png",
     "static/media/dubaiImage.png": "/globe/static/media/dubaiImage.05b36535c6b374c34b6f.png",
     "static/media/emiratesLogo.png": "/globe/static/media/emiratesLogo.4d028bc77c1731fd6291.png",
-    "static/media/logoLight.svg": "/globe/static/media/logoLight.49c3e0eed783f13aa7b9.svg",
-    "static/media/logoDark.svg": "/globe/static/media/logoDark.77b4b10184ba878d9e548f152792250b.svg",
-    "static/media/calendar.svg": "/globe/static/media/calendar.79f43e68b1a92e00124a875bd3e6b610.svg",
+    "static/media/logoLight.svg": "/globe/static/media/logoLight.e29f3a607a13595091e5.svg",
+    "static/media/logoDark.svg": "/globe/static/media/logoDark.f7339fa3dcb4653037fe5d96984a3fb3.svg",
+    "static/media/calendar.svg": "/globe/static/media/calendar.90b5d9d5c9db700a03d405f495e22e4f.svg",
     "index.html": "/globe/index.html",
-    "static/media/downArrow.svg": "/globe/static/media/downArrow.bcad962f5e58a722401078c6b978a88b.svg",
-    "main.02c91f73.css.map": "/globe/static/css/main.02c91f73.css.map",
-    "main.d4388378.js.map": "/globe/static/js/main.d4388378.js.map",
+    "main.9d4ea601.css.map": "/globe/static/css/main.9d4ea601.css.map",
+    "main.cfbc2543.js.map": "/globe/static/js/main.cfbc2543.js.map",
     "787.0839f4e5.chunk.js.map": "/globe/static/js/787.0839f4e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.02c91f73.css",
-    "static/js/main.d4388378.js"
+    "static/css/main.9d4ea601.css",
+    "static/js/main.cfbc2543.js"
   ]
 }
