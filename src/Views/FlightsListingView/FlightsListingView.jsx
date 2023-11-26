@@ -11,11 +11,17 @@ import useForm from "@hybris-software/use-ful-form";
 import { BsCheckLg } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 
+// Images
+import flyDubaiLogo from "../../Assets/images/flyDubaiLogo.png";
+import emiratesLogo from "../../Assets/images/emiratesLogo.png";
+import qatarLogo from "../../Assets/images/qatarLogo.png";
+import etihadLogo from "../../Assets/images/etihadLogo.png";
+
 // Components
 import Card from "./Components/Card/Card";
 import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
 
-// Stytles
+// Styles
 import Style from "./FlightsListingView.module.css";
 
 const cities = ["Dubai", "Sharjah", "Abu Dhabi"];
@@ -73,6 +79,21 @@ const FlightsListingView = () => {
     "My Dates Are Flexible",
   ];
 
+  const flightCards = [
+    {
+      logoImage: emiratesLogo,
+    },
+    {
+      logoImage: flyDubaiLogo,
+    },
+    {
+      logoImage: qatarLogo,
+    },
+    {
+      logoImage: etihadLogo,
+    },
+  ];
+
   return (
     <Container>
       <div className={Style.headingFilters}>
@@ -128,7 +149,11 @@ const FlightsListingView = () => {
           </div>
         </div>
         <div className={Style.separator} />
-        <Card />
+        <div className={Style.cardsWrapper}>
+          {flightCards.map((flight, index) => {
+            return <Card key={index} {...flight} />;
+          })}
+        </div>
       </div>
     </Container>
   );
