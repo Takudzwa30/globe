@@ -23,6 +23,7 @@ import dubai from "../../../../Assets/images/dubaiImage.png";
 
 // Style
 import Style from "./Plan.module.css";
+import ToolTip from "../../../../Components/ui/toolTip/ToolTip";
 
 // Data
 const places = [
@@ -73,9 +74,9 @@ const Plan = () => {
           <h3>Plan your perfect trip</h3>
           <h6>Search Flights & Places Hire to our most popular destinations</h6>
         </div>
-        <CustomButton onClick={() => navigate(paths.main.stays)}>
-          See more places
-        </CustomButton>
+        <ToolTip>
+          <CustomButton>See more places</CustomButton>
+        </ToolTip>
       </div>
       <div className={Style.cards}>
         {places.map((place, index) => {

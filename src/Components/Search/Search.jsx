@@ -15,6 +15,7 @@ import { paths } from "../../Routes/routes";
 import SimpleSelect from "../SimpleSelect/SimpleSelect";
 import DateRange from "../../Components/DateRange/DateRange";
 import CustomButton from "../CustomButton/CustomButton";
+import ToolTip from "../ui/toolTip/ToolTip";
 
 // Styles
 import Style from "./Search.module.css";
@@ -78,16 +79,18 @@ const Search = ({ filterValue, home }) => {
               <IoAirplane />
               Flights
             </div>
-            <div
-              onClick={() => setSearchFilter("stays")}
-              style={{
-                pointerEvents: "none",
-              }}
-              className={Style.hotels}
-            >
-              <IoIosBed />
-              Stays
-            </div>
+            <ToolTip>
+              <div
+                onClick={() => setSearchFilter("stays")}
+                style={{
+                  pointerEvents: "none",
+                }}
+                className={Style.hotels}
+              >
+                <IoIosBed />
+                Stays
+              </div>
+            </ToolTip>
           </div>
         )}
 

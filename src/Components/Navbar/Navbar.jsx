@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 // Components
 import MobileMenu from "../MobileMenu/MobileMenu";
+import ToolTip from "../ui/toolTip/ToolTip";
 
 // Libraries
 import { Link } from "react-router-dom";
@@ -39,17 +40,20 @@ const Navbar = () => {
           <IoAirplane className={Style.plane} />
           <p>Find Flight</p>
         </Link>
-        <Link
-          to={paths.main.stays}
-          className={Style.hotels}
-          style={{
-            pointerEvents: "none",
-          }}
-          onClick={() => setActive(false)}
-        >
-          <IoIosBed />
-          <p>Find Stays</p>
-        </Link>
+        <ToolTip>
+          <Link
+            to={paths.main.stays}
+            className={Style.hotels}
+            style={{
+              pointerEvents: "none",
+            }}
+            onClick={() => setActive(false)}
+          >
+            <IoIosBed />
+            <p>Find Stays</p>
+          </Link>
+        </ToolTip>
+
         <div
           style={{
             display:
@@ -85,8 +89,12 @@ const Navbar = () => {
       </div>
 
       <div className={Style.profile}>
-        <div className={Style.login}>Login</div>
-        <div className={Style.signup}>Sign up</div>
+        <ToolTip>
+          <div className={Style.login}>Login</div>
+        </ToolTip>
+        <ToolTip>
+          <div className={Style.signup}>Sign up</div>
+        </ToolTip>
       </div>
     </Container>
   );

@@ -21,12 +21,12 @@ import CustomButton from "../../../../Components/CustomButton/CustomButton";
 import "swiper/swiper-bundle.min.css";
 import "swiper/swiper.min.css";
 import Style from "./Reviews.module.css";
+import ToolTip from "../../../../Components/ui/toolTip/ToolTip";
 
 const data = [
   {
     heading: `“A real sense of community, nurtured”`,
-    text:
-      "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+    text: "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
     stars: 5,
     name: "Olga",
     place: "Weave Studios – Kai Tak",
@@ -36,8 +36,7 @@ const data = [
   },
   {
     heading: `“The facilities are superb. Clean, slick, bright.”`,
-    text:
-      "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+    text: "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
     stars: 4,
     name: "Thomas",
     place: "Weave Studios – Olympic",
@@ -47,8 +46,7 @@ const data = [
   },
   {
     heading: `“A real sense of community, nurtured”`,
-    text:
-      "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+    text: "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
     stars: 5,
     name: "Eliot",
     place: "Weave Studios – Kai Tak",
@@ -58,8 +56,7 @@ const data = [
   },
   {
     heading: `“A real sense of community, nurtured”`,
-    text:
-      "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
+    text: "Really appreciate the help and support from the staff during these tough times. Shoutout to Katie for helping me always, even when I was out of the country. And always available when needed.",
     stars: 5,
     name: "Olga",
     place: "Weave Studios – Kai Tak",
@@ -77,7 +74,9 @@ const Reviews = () => {
           <h3>Reviews</h3>
           <h6>What people says about Globe facilities</h6>
         </div>
-        <CustomButton to={""}>See All</CustomButton>
+        <ToolTip>
+          <CustomButton>See All</CustomButton>
+        </ToolTip>
       </div>
       <div className={Style.cards}>
         <Swiper
