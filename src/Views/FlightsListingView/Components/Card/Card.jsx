@@ -10,9 +10,6 @@ import { useNavigate } from "react-router-dom";
 // Paths
 import { paths } from "../../../../Routes/routes";
 
-// Images
-import emiratesLogo from "../../../../Assets/images/emiratesLogo.png";
-
 // Styles
 import Style from "./Card.module.css";
 
@@ -35,7 +32,7 @@ const Card = ({
   const navigate = useNavigate();
   return (
     <div className={Style.card}>
-      <img src={emiratesLogo} alt="" />
+      <img src={logoImage} alt="" />
       <div className={Style.flightDetails}>
         <div className={Style.top}>
           <div className={Style.reviews}>
