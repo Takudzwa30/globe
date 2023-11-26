@@ -13,6 +13,7 @@ import Style from "./InputRangeSlider.module.css";
 const InputRangeSlider = ({
   min = 0,
   max = 200,
+  symbol = "$",
   mainBarClassName = Style.totalBar,
   leftRangePointClassName = Style.leftRangePoint,
   rightRangePointClassName = Style.rightRangePoint,
@@ -149,7 +150,6 @@ const InputRangeSlider = ({
     }));
   }
 
-
   //Listeners
   const onMouseMove = (e) => {
     if (mouseDownRef.current.min) bulletPos("min", e.screenX);
@@ -201,14 +201,15 @@ const InputRangeSlider = ({
     }));
   };
 
-
-
   return (
-    <div style={{ overflow: "hidden", padding: "30px 20px" }}>
-      <div
-        className={mainBarClassName}
-        ref={totalBarRef}
-      >
+    <div
+      style={{
+        overflow: "hidden",
+        paddingBlock: "30px",
+        paddingInline: "0 20px",
+      }}
+    >
+      <div className={mainBarClassName} ref={totalBarRef}>
         <div
           onMouseDown={onMouseDownMin}
           onTouchStart={onTouchStartMin}
@@ -219,6 +220,7 @@ const InputRangeSlider = ({
           className={leftPointLabelClassName}
           style={{ left: rangePosition.min }}
         >
+          {symbol}
           {Math.round(currentValue.min)}
         </div>
         <div
@@ -229,8 +231,9 @@ const InputRangeSlider = ({
         ></div>
         <div
           className={rightPointLabelClassName}
-          style={{ left: rangePosition.max, bottom: "-30px" }}
+          style={{ left: rangePosition.max - 20, bottom: "-30px" }}
         >
+          {symbol}
           {Math.round(currentValue.max)}
         </div>
         <div

@@ -37,8 +37,6 @@
 }
 
 .search:hover {
-  width: 50px;
-  height: 50px;
   color: var(--mint-green-color);
   background: #fff;
   border: 1px var(--mint-green-color) solid;
@@ -48,6 +46,91 @@
   color: var(--blackish-green-color);
 }
 
-.filter h5 {
+.filters .filter:last-of-type {
+  border: none;
+}
+
+.filters h5 {
   margin-bottom: 30px;
+}
+
+.filter {
+  padding-block: 30px;
+  border-bottom: 1px solid rgba(17, 34, 17, 0.25);
+}
+
+.filter h6 {
+  margin-bottom: 10px;
+}
+
+.ratings {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.rate {
+  border: 1px solid var(--mint-green-color);
+  background: transparent;
+}
+
+.rate,
+.selectedRate {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #112211;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.rate:hover,
+.selectedRate {
+  background: var(--mint-green-color);
+  border: 1px solid #112211;
+}
+
+.class {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.class p {
+  color: var(--blackish-green-color);
+  font-weight: 500;
+}
+
+.checks {
+  display: grid;
+  gap: 15px;
+}
+
+.checked,
+.unChecked {
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.checked {
+  background: var(--mint-green-color);
+  border: 2px solid var(--mint-green-color);
+  color: var(--blackish-green-color);
+}
+
+.unChecked {
+  color: #fff;
+  background: #fff;
+  border: 2px solid #112211;
+}
+
+.filters .filter:nth-of-type(3) h6,
+.filters .filter:nth-of-type(4) h6 {
+  margin-bottom: 20px;
 }

@@ -8,6 +8,7 @@ import useForm from "@hybris-software/use-ful-form";
 // import DropDown from "../../Components/ui/DropDown/DropDown";
 
 // Icons
+import { BsCheckLg } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
 
 // Components
@@ -61,8 +62,16 @@ const FlightsListingView = () => {
     },
   });
 
+  // Variables
   const [dateRange, setDateRange] = useState([null, null]);
   const [startDate, endDate] = dateRange;
+  const airLines = ["Emirates", "Dubai", "Qatar", "Etihad"];
+  const trips = [
+    "Round trip",
+    "One Way",
+    "Multi-City",
+    "My Dates Are Flexible",
+  ];
 
   return (
     <Container>
@@ -88,11 +97,35 @@ const FlightsListingView = () => {
       <div className={Style.wrapper}>
         <div className={Style.filters}>
           <h5>Filters</h5>
+          {/* TODO : Add dropdown to each filter  */}
           {/* <DropDown length={2} title={"Price"}>
                   <h5>$4500</h5>
                   <h5>$4500</h5>
                </DropDown> */}
-          <InputRangeSlider />
+          <div className={Style.filter}>
+            <h6>Price</h6>
+            <InputRangeSlider />
+          </div>
+          <div className={Style.filter}>
+            <h6>Rating</h6>
+            <Ratings />
+          </div>
+          <div className={Style.filter}>
+            <h6>Airlines</h6>
+            <div className={Style.checks}>
+              {airLines.map((airLine, index) => {
+                return <CheckComponent keuy={index} value={airLine} />;
+              })}{" "}
+            </div>
+          </div>
+          <div className={Style.filter}>
+            <h6>Trips</h6>
+            <div className={Style.checks}>
+              {trips.map((trip, index) => {
+                return <CheckComponent keuy={index} value={trip} />;
+              })}{" "}
+            </div>
+          </div>
         </div>
         <div className={Style.separator} />
         <Card />
@@ -114,6 +147,39 @@ const SelectComponent = ({ title, content, placeholder }) => {
         setFilter(value);
       }}
     />
+  );
+};
+
+const Ratings = () => {
+  const [rate, setRate] = useState(null);
+  return (
+    <div className={Style.ratings}>
+      {[...Array(5)].map((_, index) => (
+        <div
+          onClick={() => setRate(index)}
+          className={rate === index ? Style.selectedRate : Style.rate}
+          key={index}
+        >
+          {index}+
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const CheckComponent = ({ value }) => {
+  const [isSelected, setIsSelected] = useState(false);
+
+  return (
+    <div className={Style.class} onClick={() => setIsSelected((prev) => !prev)}>
+      <BsCheckLg
+        style={{
+          color: "white",
+        }}
+        className={isSelected ? Style.checked : Style.unChecked}
+      />
+      <p>{value}</p>
+    </div>
   );
 };
 
