@@ -1,121 +1,138 @@
 .notSelected,
 .selected {
-   border-radius: 12px;
-   padding: 16px;
-   display: flex;
-   align-items: center;
-   gap: 20px;
-   justify-content: space-between;
-   margin-bottom: 15px;
-   cursor: pointer;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .selected {
-   background: #8dd3bb;
+  background: #8dd3bb;
 }
 
 .title {
-   font-weight: 700;
-   line-height: normal;
-   margin-bottom: 8px;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 8px;
 }
 
 .subTitle {
-   font-weight: 400;
-   line-height: normal;
-   max-width: 600px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 600px;
 }
 
 .tick {
-   flex-shrink: 0;
-   width: 25px;
-   height: 25px;
-   border-radius: 50%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .selected .tick {
-   border: 2px solid #fff;
+  border: 2px solid #fff;
 }
 
 .notSelected .tick {
-   border: 2px solid #112211;
+  border: 2px solid #112211;
 }
 
 .circle {
-   background: #fff;
-   width: 15px;
-   height: 15px;
-   margin: auto;
-   border-radius: 50%;
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .icon {
-   font-size: 28px;
-   margin-right: 20px;
+  font-size: 28px;
+  margin-right: 20px;
 }
 
 .cardDetails {
-   display: flex;
-   align-items: center;
-   gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .addNew {
-   border-radius: 15px;
-   border: 2px dashed var(--Mint-Green, #8dd3bb);
-   padding: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-   gap: 15px;
-   margin-bottom: 15px;
+  border-radius: 15px;
+  border: 2px dashed var(--Mint-Green, #8dd3bb);
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .addIcon {
-   font-size: 55px;
-   color: #8dd3bb;
-   cursor: pointer;
+  font-size: 55px;
+  color: #8dd3bb;
+  cursor: pointer;
 }
 
 .addNew p {
-   font-size: 12px;
-   font-weight: 500;
-   opacity: 0.75;
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.75;
 }
 
 .modalWrapper {
-   padding-block: 30px;
+  padding-block: 30px;
 }
 
 .modalWrapper h2 {
-   font-weight: 700;
-   margin-bottom: 3.125rem;
+  font-weight: 700;
+  margin-bottom: 3.125rem;
 }
 
 .inputsGrid {
-   display: grid;
-   grid-template-columns: repeat(2, 1fr);
-   gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
 .inputsGrid > :nth-child(1),
 .inputsGrid > :nth-child(5),
 .inputsGrid > :nth-child(4) {
-   grid-column: span 2;
+  grid-column: span 2;
 }
 
 .successModalTitle {
-   text-align: center;
+  text-align: center;
 }
 
 .successIcon {
-   margin-block: 30px;
-   font-size: 50px;
-   text-align: center;
-   width: 100%;
-   color: var(--mint-green-color);
+  margin-block: 30px;
+  font-size: 50px;
+  text-align: center;
+  width: 100%;
+  color: var(--mint-green-color);
+}
+
+.cardNumberWrapper {
+  position: relative;
+}
+
+.cardNumberWrapper img {
+  position: absolute;
+  right: 16px;
+  top: 9.5px;
+}
+
+.terms {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
 }
