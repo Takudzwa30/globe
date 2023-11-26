@@ -42,6 +42,9 @@ const Navbar = () => {
         <Link
           to={paths.main.stays}
           className={Style.hotels}
+          style={{
+            pointerEvents: "none",
+          }}
           onClick={() => setActive(false)}
         >
           <IoIosBed />
@@ -49,7 +52,8 @@ const Navbar = () => {
         </Link>
         <div
           style={{
-            display: window.location.pathname === paths.main.home ? "none" : "block",
+            display:
+              window.location.pathname === paths.main.home ? "none" : "block",
           }}
           className={active ? Style.selector : Style.selectorActive}
         ></div>
