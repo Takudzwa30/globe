@@ -1,0 +1,45 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  background-color: var(--mint-green-color);
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-top: 7px;
+  margin-left: -50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext,
+.tooltip:hover .triangle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.triangle {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+  left: 50%;
+  margin-top: 2px;
+  margin-left: -7px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid var(--mint-green-color);
+}
