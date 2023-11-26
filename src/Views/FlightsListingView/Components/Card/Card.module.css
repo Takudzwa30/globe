@@ -6,6 +6,7 @@
   display: grid;
   gap: 35px;
   grid-template-columns: 160px 1fr;
+  height: fit-content;
 }
 
 .top {
@@ -44,6 +45,10 @@
   color: #ff8682;
 }
 
+.times {
+  justify-content: space-between;
+}
+
 .times,
 .time {
   display: flex;
@@ -80,3 +85,24 @@
   gap: 15px;
 }
 
+@media screen and (max-width: 1200px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card > img {
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .times {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .times:nth-child(2) {
+    margin-bottom: 50px;
+  }
+}
