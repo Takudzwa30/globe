@@ -5,7 +5,7 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 import ToolTip from "../ui/toolTip/ToolTip";
 
 // Libraries
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container } from "@hybris-software/ui-kit";
 
 // Routes
@@ -28,6 +28,7 @@ import Style from "./Navbar.module.css";
 const Navbar = () => {
   const [active, setActive] = useState(true);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <Container className={Style.navBarContainer}>
       <MobileMenu open={open} setOpen={setOpen} />
@@ -89,9 +90,9 @@ const Navbar = () => {
       </div>
 
       <div className={Style.profile}>
-        <ToolTip>
-          <div className={Style.login}>Login</div>
-        </ToolTip>
+        <div onClick={() => navigate(paths.auth.login)} className={Style.login}>
+          Login
+        </div>
         <ToolTip>
           <div className={Style.signup}>Sign up</div>
         </ToolTip>
