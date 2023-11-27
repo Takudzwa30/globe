@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Tesla Clone App avec Next.js 13 et React Three Fiber
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bienvenue sur le dépôt de [Tesla Clone](https://clone-tesla-delta.vercel.app/),
+une réplique du site officiel de Tesla, développée avec **Next.js 13** et
+**React Three Fiber** pour une expérience de
+[configurateur 3D unique](https://clone-tesla-delta.vercel.app/configurateur).
+Cette application inclut toutes les fonctionnalités, animations et pages du site
+original, en y ajoutant une touche personnelle grâce à l'intégration de Three.js
+et React Three Fiber.
 
-## Available Scripts
+<div>
+  <img src="./public/images/thumb-tesla-project.jpg" alt="Capture d'écran de l'application Tesla Clone" width="100%" />
+  <div>  <img src="./public/images/configurateur.jpg" alt="Capture d'écran de l'application Tesla Clone" width="48%" />  <img src="./public/images/configurateur/scheenshot-app-tesla.png" alt="Capture d'écran de l'application Tesla Clone" width="50%" /></div>
 
-In the project directory, you can run:
+</div>
 
-### `npm start`
+## 🚀 Fonctionnalités
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Clone fidèle du site officiel de Tesla
+- Mise en œuvre des dernières technologies : Next.js 13 et React 18
+- Configurateur 3D interactif avec React Three Fiber et Three.js
+- Toutes les pages et animations du site original
+- Optimisations pour le référencement (SEO)
+- Responsive design pour une expérience utilisateur optimale sur tous les
+  appareils
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+1. Clonez ce dépôt :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/AndreaGauvreau/clone-tesla.git
+```
 
-### `npm run build`
+Ouvrez votre navigateur et accédez à http://localhost:3000. L'application sera
+automatiquement chargée et prête à être utilisée.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Accédez au dossier du projet et installez les dépendances
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd tesla-clone
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Lancez l'application en mode développement :
 
-### `npm run eject`
+```
+npm run dev
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🌐 Déploiement Suivez les instructions de déploiement de Next.js pour déployer
+votre application sur la plateforme de votre choix (Vercel, Netlify, etc.).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙌 Remerciements Un grand merci à Tesla pour leur site Web inspirant et à tous
+les développeurs qui ont contribué à l'écosystème Next.js et React.
