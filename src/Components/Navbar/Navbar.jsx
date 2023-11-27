@@ -41,19 +41,17 @@ const Navbar = () => {
           <IoAirplane className={Style.plane} />
           <p>Find Flight</p>
         </Link>
-        <ToolTip>
-          <Link
-            to={paths.main.stays}
-            className={Style.hotels}
-            style={{
-              pointerEvents: "none",
-            }}
-            onClick={() => setActive(false)}
-          >
-            <IoIosBed />
-            <p>Find Stays</p>
-          </Link>
-        </ToolTip>
+        <Link
+          to={paths.main.stays}
+          className={Style.hotels}
+          style={{
+            pointerEvents: "none",
+          }}
+          onClick={() => setActive(false)}
+        >
+          <IoIosBed />
+          <p>Find Stays</p>
+        </Link>
 
         <div
           style={{
@@ -90,12 +88,12 @@ const Navbar = () => {
       </div>
 
       <div className={Style.profile}>
-        <div onClick={() => navigate(paths.auth.login)} className={Style.login}>
+        <Link to={paths.auth.login} className={Style.login}>
           Login
-        </div>
-        <ToolTip>
-          <div className={Style.signup}>Sign up</div>
-        </ToolTip>
+        </Link>
+        <Link to={paths.auth.signUp} className={Style.signup}>
+          Sign up
+        </Link>
       </div>
     </Container>
   );
