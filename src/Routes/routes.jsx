@@ -17,6 +17,7 @@ import FlightBookingDetailsView from "../Views/FlightBookingDetailsView/FlightBo
 import ReceiptDetailsView from "../Views/ReceiptDetailsView/ReceiptDetailsView";
 import StaysListingView from "../Views/StaysListingView";
 import LoginView from "../Views/LoginView";
+import SignUpView from "../Views/SignUpView";
 
 const routes = {
   main: {
@@ -76,6 +77,12 @@ const routes = {
         path: "/login",
         element: <LoginView />,
         title: "Login",
+        // icon: <AiFillHome />,
+      },
+      signUp: {
+        path: "/signup",
+        element: <SignUpView />,
+        title: "SignUp",
         // icon: <AiFillHome />,
       },
     },

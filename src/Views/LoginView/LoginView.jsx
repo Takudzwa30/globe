@@ -66,15 +66,9 @@ const LoginView = () => {
       <div className={Style.signUpWrapper}>
         Don’t have an account?{" "}
         <span>
-          <ToolTip>
-            <Link
-              to=""
-              // to={paths.auth.signUp}
-              className={Style.link}
-            >
-              Sign up
-            </Link>
-          </ToolTip>
+          <Link to={paths.auth.signUp} className={Style.link}>
+            Sign up
+          </Link>
         </span>
       </div>
       <ThirdPartyLogin text="Or login with" />
