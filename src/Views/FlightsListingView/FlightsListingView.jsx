@@ -7,6 +7,11 @@ import DateRange from "../../Components/DateRange/DateRange";
 import useForm from "@hybris-software/use-ful-form";
 // import DropDown from "../../Components/ui/DropDown/DropDown";
 
+// Components
+import Card from "./Components/Card/Card";
+import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
+import CheckComponent from "../../Components/ui/checkComponent/CheckComponent";
+
 // Icons
 import { BsCheckLg } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
@@ -16,10 +21,6 @@ import flyDubaiLogo from "../../Assets/images/flyDubaiLogo.png";
 import emiratesLogo from "../../Assets/images/emiratesLogo.png";
 import qatarLogo from "../../Assets/images/qatarLogo.png";
 import etihadLogo from "../../Assets/images/etihadLogo.png";
-
-// Components
-import Card from "./Components/Card/Card";
-import InputRangeSlider from "../../Components/ui/InputRangeSlider/InputRangeSlider";
 
 // Styles
 import Style from "./FlightsListingView.module.css";
@@ -135,7 +136,7 @@ const FlightsListingView = () => {
             <h6>Airlines</h6>
             <div className={Style.checks}>
               {airLines.map((airLine, index) => {
-                return <CheckComponent keuy={index} value={airLine} />;
+                return <CheckComponent key={index} value={airLine} />;
               })}{" "}
             </div>
           </div>
@@ -143,7 +144,7 @@ const FlightsListingView = () => {
             <h6>Trips</h6>
             <div className={Style.checks}>
               {trips.map((trip, index) => {
-                return <CheckComponent keuy={index} value={trip} />;
+                return <CheckComponent key={index} value={trip} />;
               })}{" "}
             </div>
           </div>
@@ -188,22 +189,6 @@ const Ratings = () => {
           {index}+
         </div>
       ))}
-    </div>
-  );
-};
-
-const CheckComponent = ({ value }) => {
-  const [isSelected, setIsSelected] = useState(false);
-
-  return (
-    <div className={Style.class} onClick={() => setIsSelected((prev) => !prev)}>
-      <BsCheckLg
-        style={{
-          color: "white",
-        }}
-        className={isSelected ? Style.checked : Style.unChecked}
-      />
-      <p>{value}</p>
     </div>
   );
 };

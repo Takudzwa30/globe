@@ -4,7 +4,7 @@
   "homepage": "https://takudzwa30.github.io/globe/",
   "private": true,
   "dependencies": {
-    "@hybris-software/ui-kit": "^2.2.39",
+    "@hybris-software/ui-kit": "^2.2.46",
     "@hybris-software/use-ful-form": "^2.2.1",
     "@hybris-software/use-query": "^2.3.17",
     "@testing-library/jest-dom": "^5.16.5",

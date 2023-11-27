@@ -60,7 +60,7 @@ const ReceiptDetailsView = () => {
   const location = useLocation();
 
   // Variables
-  const flight = location?.state?.flight;
+//   const flight = location?.state?.flight;
   return (
     <Container>
       <div className={Style.breadCrumb}>
