@@ -15,3 +15,17 @@
   flex-direction: column;
   justify-content: center;
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  .slider {
+    display: none;
+  }
+
+  .content {
+    justify-content: flex-start;
+  }
+}

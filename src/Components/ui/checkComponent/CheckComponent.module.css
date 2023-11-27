@@ -8,6 +8,7 @@
 .class p {
   color: var(--blackish-green-color);
   font-weight: 500;
+  font-size: 14px;
 }
 
 .checked,

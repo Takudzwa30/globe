@@ -14,7 +14,9 @@ const AuthLayout = () => {
   return (
     <Container>
       <main className={Style.main}>
+        <div className={Style.slider}>
           <AuthImageSlider />
+        </div>
         <div className={Style.content}>
           <Outlet />
         </div>
