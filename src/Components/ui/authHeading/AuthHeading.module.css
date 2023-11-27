@@ -3,7 +3,7 @@
   font-size: 40px;
   font-weight: 700;
   line-height: normal;
-  margin-block: 65px 15px;
+  margin-bottom: 15px;
 }
 
 .authHeading h6 {
@@ -11,6 +11,19 @@
   line-height: normal;
   opacity: 0.75;
   margin-bottom: 45px;
+}
+
+.backWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-block: 40px 20px;
+  color: #121;
+  transition: 0.3s ease all;
+}
+
+.backWrapper:hover {
+  color: var(--mint-green-color);
 }
 
 @media screen and (max-width: 768px) {
