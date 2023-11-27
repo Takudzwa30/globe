@@ -1,0 +1,29 @@
+.class {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.class p {
+  color: var(--blackish-green-color);
+  font-weight: 500;
+}
+
+.checked,
+.unChecked {
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.checked {
+  background: var(--mint-green-color);
+  border: 2px solid var(--mint-green-color);
+  color: var(--blackish-green-color);
+}
+
+.unChecked {
+  color: #fff;
+  background: #fff;
+  border: 2px solid #112211;
+}
