@@ -1,0 +1,28 @@
+.form {
+  display: grid;
+  gap: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.link {
+  color: #ff8682;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease all;
+}
+
+.link:hover {
+  color: var(--mint-green-color);
+}
+
+.signUpWrapper {
+  margin-block: 20px 40px;
+  text-align: center;
+}
+
