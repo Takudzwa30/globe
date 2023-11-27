@@ -41,17 +41,19 @@ const Navbar = () => {
           <IoAirplane className={Style.plane} />
           <p>Find Flight</p>
         </Link>
-        <Link
-          to={paths.main.stays}
-          className={Style.hotels}
-          style={{
-            pointerEvents: "none",
-          }}
-          onClick={() => setActive(false)}
-        >
-          <IoIosBed />
-          <p>Find Stays</p>
-        </Link>
+        <ToolTip>
+          <Link
+            to={paths.main.stays}
+            className={Style.hotels}
+            style={{
+              pointerEvents: "none",
+            }}
+            onClick={() => setActive(false)}
+          >
+            <IoIosBed />
+            <p>Find Stays</p>
+          </Link>
+        </ToolTip>
 
         <div
           style={{
