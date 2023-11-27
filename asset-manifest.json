@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/globe/static/css/main.9d4ea601.css",
-    "main.js": "/globe/static/js/main.cfbc2543.js",
+    "main.css": "/globe/static/css/main.d0007a0f.css",
+    "main.js": "/globe/static/js/main.f7c03c0d.js",
     "static/js/787.0839f4e5.chunk.js": "/globe/static/js/787.0839f4e5.chunk.js",
     "static/media/homeHero.png": "/globe/static/media/homeHero.c39775a826ec767b0bbc.png",
     "static/media/staysHeroBG.png": "/globe/static/media/staysHeroBG.8b2a798f1a85fd26ef7d.png",
     "static/media/flightsHeroBG.png": "/globe/static/media/flightsHeroBG.5a12421952b83646705f.png",
+    "static/media/authImageOne.png": "/globe/static/media/authImageOne.df0ae0c9948534879bc7.png",
     "static/media/hotelsBG.png": "/globe/static/media/hotelsBG.65e45fbcafb3e997cf9c.png",
     "static/media/bigPlane.png": "/globe/static/media/bigPlane.df7357fc1e2175290011.png",
     "static/media/flightsBG.png": "/globe/static/media/flightsBG.d49716fc53811b81be01.png",
@@ -41,12 +42,12 @@
     "static/media/logoDark.svg": "/globe/static/media/logoDark.f7339fa3dcb4653037fe5d96984a3fb3.svg",
     "static/media/calendar.svg": "/globe/static/media/calendar.90b5d9d5c9db700a03d405f495e22e4f.svg",
     "index.html": "/globe/index.html",
-    "main.9d4ea601.css.map": "/globe/static/css/main.9d4ea601.css.map",
-    "main.cfbc2543.js.map": "/globe/static/js/main.cfbc2543.js.map",
+    "main.d0007a0f.css.map": "/globe/static/css/main.d0007a0f.css.map",
+    "main.f7c03c0d.js.map": "/globe/static/js/main.f7c03c0d.js.map",
     "787.0839f4e5.chunk.js.map": "/globe/static/js/787.0839f4e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d4ea601.css",
-    "static/js/main.cfbc2543.js"
+    "static/css/main.d0007a0f.css",
+    "static/js/main.f7c03c0d.js"
   ]
 }
