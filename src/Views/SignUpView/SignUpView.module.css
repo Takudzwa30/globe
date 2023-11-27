@@ -1,0 +1,74 @@
+.form {
+  display: grid;
+  gap: 15px 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "input1 input2"
+    "input3 input4"
+    "input5 input5"
+    "input6 input6";
+}
+
+.form > :nth-child(1) {
+  grid-area: input1;
+}
+
+.form > :nth-child(2) {
+  grid-area: input2;
+}
+
+.form > :nth-child(3) {
+  grid-area: input3;
+}
+
+.form > :nth-child(4) {
+  grid-area: input4;
+}
+
+.form > :nth-child(5) {
+  grid-area: input5;
+}
+
+.form > :nth-child(6) {
+  grid-area: input6;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.link {
+  color: #ff8682;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s ease all;
+  font-weight: 600;
+}
+
+.link:hover {
+  color: var(--mint-green-color);
+}
+
+.signUpWrapper {
+  margin-block: 20px 40px;
+  text-align: center;
+}
+
+@media screen and (max-width: 576px) {
+  .signUpWrapper {
+    text-align: start;
+  }
+
+  .form {
+    grid-template-areas:
+      "input1 input1"
+      "input2 input2"
+      "input3 input3"
+      "input4 input4"
+      "input5 input5"
+      "input6 input6";
+  }
+}
