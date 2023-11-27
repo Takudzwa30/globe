@@ -74,9 +74,7 @@ const Reviews = () => {
           <h3>Reviews</h3>
           <h6>What people says about Globe facilities</h6>
         </div>
-        <ToolTip>
-          <CustomButton>See All</CustomButton>
-        </ToolTip>
+
       </div>
       <div className={Style.cards}>
         <Swiper

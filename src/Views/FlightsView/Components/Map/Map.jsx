@@ -21,7 +21,6 @@ const Map = () => {
               trip with us.
             </h6>
           </div>
-          <CustomButton>See All</CustomButton>
         </div>
       </Container>
       <div className={Style.mapWrapper}>
