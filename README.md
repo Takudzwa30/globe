@@ -1,13 +1,8 @@
-# Travel agency website with Next.js 13 and React
+# Travel agency website with React
 
-Welcome to the repository of [Tesla Clone](https://clone-tesla-delta.vercel.app/), a replica of the official Tesla website developed with **Next.js 13** and **React Three Fiber** for a unique [3D configurator experience](https://clone-tesla-delta.vercel.app/configurateur). This application includes all the features, animations, and pages from the original site, adding a personal touch through the integration of Three.js and React Three Fiber.
-
+Welcome to the repository of [Golobe Travel Agency](https://takudzwa30.github.io/globe/), a website that shows flights and hotels for tourists developed with **React**.
 <div>
   <img src="./public/images/thumb-tesla-project.jpg" alt="Screenshot of Tesla Clone application" width="100%" />
-  <div>  
-    <img src="./public/images/configurateur.jpg" alt="Screenshot of Tesla Clone application" width="48%" />  
-    <img src="./public/images/configurateur/scheenshot-app-tesla.png" alt="Screenshot of Tesla Clone application" width="50%" />
-  </div>
 </div>
 
 ## 🚀 Features
