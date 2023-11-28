@@ -14,26 +14,25 @@ To preview please follow this link: [Golobe Travel Agency](https://takudzwa30.gi
 
 ```bash
 git clone https://github.com/Takudzwa30/globe.git
+```
 
 2. Go to the project folder and install dependencies.
 
 ```
-
 cd globe
 npm install
-
 ```
 
 3. Start the application in development mode:
 
 ```
-
 npm start
-
 ```
-
 
 🌐 Deployment: Follow the deployment instructions of React.js to deploy your application on the platform of your choice (Vercel, Netlify, etc.).
 
 🙌 Acknowledgments: A big thank you to Figma community for their inspiring website designs and to all the developers who have contributed to the React ecosystem.
+
+```
+
 ```
