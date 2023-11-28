@@ -33,6 +33,3 @@ npm start
 
 🙌 Acknowledgments: A big thank you to Figma community for their inspiring website designs and to all the developers who have contributed to the React ecosystem.
 
-```
-
-```
