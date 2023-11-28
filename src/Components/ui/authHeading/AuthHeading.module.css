@@ -33,4 +33,7 @@
   .authHeading h1 {
     margin-top: 20px;
   }
+  .backWrapper {
+    justify-content: center;
+  }
 }

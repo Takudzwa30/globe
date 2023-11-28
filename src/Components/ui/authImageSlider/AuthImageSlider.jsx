@@ -2,8 +2,8 @@ import React, { useRef, useState, useEffect } from "react";
 
 // Images
 import SlideAuthLayout1 from "../../../Assets/images/authImageOne.png";
-import SlideAuthLayout2 from "../../../Assets/images/authImageOne.png";
-import SlideAuthLayout3 from "../../../Assets/images/authImageOne.png";
+import SlideAuthLayout2 from "../../../Assets/images/loginPlane.png";
+import SlideAuthLayout3 from "../../../Assets/images/touristCity.jpg";
 
 // Styles
 import Style from "./AuthImageSlider.module.css";
