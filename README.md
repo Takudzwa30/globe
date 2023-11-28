@@ -2,6 +2,8 @@
 
 Welcome to the repository of [Golobe Travel Agency](https://takudzwa30.github.io/globe/), a website that shows flights and hotels for tourists developed with **React**.
 
+To preview please follow this link: [Golobe Travel Agency](https://takudzwa30.github.io/globe/)
+
 <div>
   <img src="./public/images/fullPage.png" alt="Screenshot of website" width="100%" />
 </div>
